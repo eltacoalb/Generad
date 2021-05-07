@@ -1,0 +1,223 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <link href="~/css/estilos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="~/css/style.css" rel="stylesheet" />
+    <script src="~/js/jquery-2.1.4.min.js"></script>
+    <title>Genera-D</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="~/img/GENERA%20D,HOLDING,GOTA%20DE%20AGUA,MEDIA%20CARTA,130519.png" class="tam_logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" pst" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link active" href="@Url.Action("Index", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Nosotros", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Holding", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Holding</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Comercializacion", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Comercializacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("IntegracionPersonal", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Integracionpersonal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Documental", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Documental</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("Contacto", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="c_todos c_prin">
+        <div class="caja_texto">
+            <span class="titulo1tt">Comercialización</span>
+
+
+        </div>
+
+    </section>
+    <section class="seccion2">
+        <br>
+        <span class="t_sec1">Productos y Servicios</span>
+        <div class="c_img">
+            <div class="c1p 111">
+                <div class="caja1cl1">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="~/img/COMERSIALIZACI%E2%80%A1N%2002,EQUIPO%20M%C3%AADICO,RESONANCIA%20MAGN%C3%AATICA.jpg" alt="Equipo Medico">
+                        <div class="card-body">
+                            <h5 class="card-title">Equipo Medico</h5>
+                            <p class="card-text">Somos asociados por proyecto con las marcas líderes de equipamiento médico para hospitales, clínicas y consultorios médicos</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c_img">
+                <div class="c1p2">
+                    <div class="caja1cl1">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="~/img/COMERSIALIZACI%E2%80%A1N%2004,MAQUINARIA%20INDUSTRIAL,TROQUELADORAS.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Maquinaria</h5>
+                                <p class="card-text">Contamos con asociados con los mejores arrendadores de maquinaria para construcción </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c_img">
+                <div class="c1p3">
+                    <div class="caja1cl1">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="~/img/INICIO%2001,SOLUCI%E2%80%A1N%20A%20PROBLEMAS%20HABITACIONALES,%20CIUDADES%20SUSTENTABLES.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Productos Sustentables</h5>
+                                <p class="card-text">creemos en la sustentabilidad como una parte obligatoria de la producción industrial, por ello comercializamos cualquier producto con certificados de protección y de beneficio a la naruraleza</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="seccion2">
+        <br>
+        <span class="t_sec1">La miel en el mundo.</span>
+        <div class="c_img7">
+            <div class="c1p">
+                <span class="mieltext" style="position: relative;right: 48vh;bottom: 5vh;font-family: 'Roboto';color: gray;font-weight: bold;">
+                    La miel es un alimento, por lo que lo regulan <br>
+                    organismos especializados en todo el mundo como:
+
+                </span>
+                <br>
+                <span style="position: relative;right: 45vh;text-align: right;font-family: 'Roboto';font-weight: lighter;color: gray;">
+                    La Administración de Comida y Drogas de los <br>
+                    Estados Unidos o Food and Drug Administration, <br>
+                    FDA, El Códex Alimentarius que es una iniciativa <br>
+                    de la Organización Mundial de la Salud, OMS y  <br>
+                    La Autoridad Europea de Seguridad Alimentaria o  <br>
+                    European Food Safety Authority, EFSA.  <br>
+
+                    En México la autoridad reguladora es SENASICA,  <br>
+                    perteneciente a la Organización Agropecuaria  <br>
+                    Oficial y que homologa sus principios y  <br>
+                    reglamentaciones a las de la FDA de su socio  <br>
+                    comercial.
+
+                    Bajo estos estándares la FAO considera que,  <br>
+                    para la miel, los cinco principales productores de <br>
+                    miel son China, Rusia, México, Estados Unidos y
+                    España     <br>
+                </span>
+
+                <img src="~/img/COMERSIALIZACI%E2%80%A1N%2006,MIEL,MAPA%20PRODUCTORES.jpg" alt="" class="mielimg">
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary ppbtn" data-toggle="modal" data-target="#exampleModalLong">
+            Saber Mas
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">La Miel en el mundo.</h5>
+                        <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        la miel es un alimento, por lo que lo regulan organis.mos especializados en todo el mundo como:
+                        La Administración de Comida y Drogas de los Estados Unidos o Food and Drug Administration, FDA,
+                        El Códex Alimentarius que es una iniciativa de la Organización Mundial de la Salud, OMS y
+                        La Autoridad Europea de Seguridad Alimentaria o European Food Safety Authority, EFSA.
+
+                        En México la autoridad reguladora es SENASICA, perteneciente a la Organización Agropecuaria Oficial y que homologa sus principios y reglamentaciones a las de la FDA de su socio comercial.
+
+                        Bajo estos estándares la FAO considera que, para la miel, los cinco principales productores de miel son China, Rusia, México, Estados Unidos y España.
+                        las mieles más apreciadas son las de Brasil, España y México por su pureza, propiedades medicinales y propiedades alimenticias.
+
+                        La Biblioteca Nacional de Medicina de Estados Unidos registra 320 tipos de miel; y en México se tienen más de 250 de ellas
+
+                        en México se tienen flores endémicas que producen un polen que, al ser procesadas por la abeja, crean una miel dulce, semi ácida y semi amarga
+
+                        mieles endémicas mexicanas son la de Mezquite, Tojonal, Aguacate, Dzizilche, Jabín
+
+                        la ventaja de la Miel Mexicana, sobre los demás países, es que se cosecha durante todo el año por el clima tan bondadoso que tiene.
+
+                        es la más vendida en México, Estados Unidos de América, y Asia, ya que las abejas productoras MELÍFERAS, que viajan por muchas regiones del basto territorio mexicano. Produciendo miel de mezcla de sabores y consistencias.
+
+                        Los apicultores mexicanos la homogenizan creando un estandar de sabor conocido en todo el mundo por un sabor dulce con un toque  ácido que la hace exquisita
+                        representamos a:
+
+                        más de 5,000 apicultores en todo México y
+
+                        tenemos convenio con las 3 principales envasadoras que cumplen con los más estrictos requisitos para exportación, para poder surtir, desde frascos de 350 gramos hasta barriles de 300 kilogramos
+
+                        elegir el producto de nuestro catálogo 2021 y revisar las cantidades de existencia
+
+                        llamar al nuestra oficna en México al +52 5547392178 de Lunes a Viernes de 10 hrs a 17 hrs para información de envío y tiempo de enrtega y realizar el pedido
+
+
+                        verificado el importe, la cantidad y el tipo de envasado, se le enviará la factura y la forma de pago
+
+                        nuestra empresa transportadora y/o exportadora la entregará en donde lo necesite
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto pptsr">
+        <div class="c_contacto c_prin">
+            <span class="text1">
+                Horario de oficina:
+                <br> lunes a viernes de 9 hrs. a 17 hrs.
+                <br> tiempo del centro de México
+                <span class="text2"> <br> Oficina +525547392178 </span>
+
+                <span class="text2"> <br>Whatsapp: +525548334915</span>
+
+                <span class="text2"> <br>asistencia@generad.one</span>
+
+            </span>
+
+        </div>
+
+    </section>
+    <section class="footer ">
+    </section>
+</body>
+</html>

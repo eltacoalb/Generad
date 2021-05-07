@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="clientes_de_gobiernos" xml:space="preserve">
+    <value>Clientes de gobiernos</value>
+  </data>
+  <data name="clientes_de_gobiernos_1" xml:space="preserve">
+    <value>Federal, estatal o municipal</value>
+  </data>
+  <data name="clientes_de_gobiernos_2" xml:space="preserve">
+    <value>Ofrecemos desarrollo de proyectos de infraestructura partiendo de las necesidades que requiera la población en las áreas de: 
+
+SALUD (hospitales generales y de alta especialidad; de plantas de tratamiento, reciclamiento e incineración de Residuos Sólidos con generación de energía WTE y plantas de tratamiento de agua residual y plantas potabilizadoras), 
+
+VIALIDADES TERRESTRES Y ACUÁTICAS (públicas o concesionadas), y 
+
+CIUDADES SUSTENTABLES, SIN INVERSIÓN GUBERNAMENTAL</value>
+  </data>
+  <data name="clientes_de_gobiernos_3" xml:space="preserve">
+    <value>Ofrecemos contactar a los gobiernos con las mejores y mas honestas empresas de diseño, dieseño arquitectónico, construcción, equipamiento de infraestrucura, operación y manteniminto de inmuebles</value>
+  </data>
+  <data name="clientes_de_gobiernos_4" xml:space="preserve">
+    <value>Ofrecemos transversalmente mediación de conflictos técnicos, legales y/o económicos con empresas contratadas como contratistas o proveedores, profesionistas u otros gobiernos federales o gobiernos de estados o departamentos y/o gobiernos municipales</value>
+  </data>
+  <data name="clientes_privados" xml:space="preserve">
+    <value>Clientes privados</value>
+  </data>
+  <data name="clientes_profesionales" xml:space="preserve">
+    <value>Clientes profesionales</value>
+  </data>
+  <data name="clientes_profesionales_1" xml:space="preserve">
+    <value>Independientes</value>
+  </data>
+  <data name="clientes_profesionales_2" xml:space="preserve">
+    <value>Ofrecemos desarrollar su potencial y sumarlos a los proyectos conservando su individualidad</value>
+  </data>
+  <data name="empresas_grandes" xml:space="preserve">
+    <value>Empresas grandes</value>
+  </data>
+  <data name="empresas_grandes_1" xml:space="preserve">
+    <value>Ofrecemos optimización y auditoría a su modelo de negocio mediante asesoría y consultoría técnica y legal para conflictos empresariales, anteriores o actuales, además de ofrecer propuesta de proyectos con financiamiento y su realización garantizada mediante factoraje</value>
+  </data>
+  <data name="empresas_grandes_2" xml:space="preserve">
+    <value>Ofrecemos financiamiento, tecnología y supervisión legal para ASOCIACIONES PÚBLICO-PRIVADAS, CONCESIONES y ASIGNACIONES POR ESPECIALIDAD</value>
+  </data>
+  <data name="empresas_grandes_3" xml:space="preserve">
+    <value>Ofrecemos transversalmente mediación de conflictos técnicos, legales y/o económicos con otras empresas o con gobiernos federales, gobiernos de estados o departamentos y/o gobiernos municipales, con garantía de cobranza</value>
+  </data>
+  <data name="empresas_medianas" xml:space="preserve">
+    <value>Empresas medianas</value>
+  </data>
+  <data name="empresas_medianas_1" xml:space="preserve">
+    <value>Ofrecemos optimización de su modelo de negocio mediante auditorías técnicas, legales y financieras, propuesta de proyectos con financiamiento y su realización garantizada</value>
+  </data>
+  <data name="empresas_medianas_2" xml:space="preserve">
+    <value>Ofrecemos mediación de conflictos técnicos, legales y/o económicos con otras empresas o con gobiernos federales, gobiernos de estados o departamentos y/o gobiernos municipales. 
+
+Utilizamos soluciones transversales que beneficien a todas las partes</value>
+  </data>
+  <data name="empresas_micro" xml:space="preserve">
+    <value>Empresas micro</value>
+  </data>
+  <data name="empresas_micro_1" xml:space="preserve">
+    <value>Ofrecemos modelos de negocios de rápida recuperación de inversión con utilidad proporcional</value>
+  </data>
+  <data name="empresas_pequeñas" xml:space="preserve">
+    <value>Empresas pequeñas</value>
+  </data>
+  <data name="empresas_pequeñas_1" xml:space="preserve">
+    <value>Ofrecemos modelos de negocios de alta recuperación de inversión, cartera de clientes y capital revolvente de fondos de inversión</value>
+  </data>
+</root>

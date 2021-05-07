@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="comunicacion_efectiva" xml:space="preserve">
+    <value>Effective communication</value>
+  </data>
+  <data name="comunicacion_efectiva_1" xml:space="preserve">
+    <value>we standardize understandings between peers and collaborators, reach agreements and fulfill them</value>
+  </data>
+  <data name="desarrollo_de_negocios" xml:space="preserve">
+    <value>Business development and human development: knowledge</value>
+  </data>
+  <data name="desarrollo_de_negocios_actitudes" xml:space="preserve">
+    <value>Business development and human development: attitudes</value>
+  </data>
+  <data name="desarrollo_de_negocios_habilidades" xml:space="preserve">
+    <value>Business development and human development: skills</value>
+  </data>
+  <data name="disciplina_institucional_responsabilidad" xml:space="preserve">
+    <value>Disciplina institucional, responsabilidad y disposición</value>
+  </data>
+  <data name="disciplina_institucional_responsabilidad_1" xml:space="preserve">
+    <value>Estandarizamos los criterios individuales en colectivos de la organización de conformidad con su misión y políticas empresariales y de calidad</value>
+  </data>
+  <data name="disciplina_institucional_responsabilidad_2" xml:space="preserve">
+    <value>Realizamos talleres lúdicos y vivenciales en lugares armónicos</value>
+  </data>
+  <data name="entrenamiento_y_formacion" xml:space="preserve">
+    <value>Entrenamiento y formación de empleados empresariales y de gobierno</value>
+  </data>
+  <data name="entrenamiento_y_formacion_1" xml:space="preserve">
+    <value>Realizamos evaluaciones objetivas, estandarizamos las habilidades requeridas y potenciamos las de especialidad</value>
+  </data>
+  <data name="formacion_directiva" xml:space="preserve">
+    <value>Formación directiva</value>
+  </data>
+  <data name="generales_y_especializados" xml:space="preserve">
+    <value>Generales y especializados para empresas y gobiernos</value>
+  </data>
+  <data name="generales_y_especializados_1" xml:space="preserve">
+    <value>Realizamos evaluaciones objetivas, estandarizamos los conocimeintos requeridos y potenciamos los de especialidad</value>
+  </data>
+  <data name="generales_y_especializados_2" xml:space="preserve">
+    <value>Elaboramos y/o impartimos cursos, seminarios, pláticas o conferencias, desde 1 persona en adelante</value>
+  </data>
+  <data name="vision_de_negocio" xml:space="preserve">
+    <value>Effective communication</value>
+  </data>
+  <data name="vision_de_negocio_1" xml:space="preserve">
+    <value>We specialize in teaching successful methodologies so that managers establish simple and clear routes to achieve the objective of their area in accordance with the mission and organizational policy</value>
+  </data>
+</root>

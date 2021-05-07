@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="equipo_medico" xml:space="preserve">
+    <value>Medical equipment</value>
+  </data>
+  <data name="equipo_medico_1" xml:space="preserve">
+    <value>We are associated by project with the leading brands of medical equipment for hospitals, clinics and doctors' offices</value>
+  </data>
+  <data name="fuerza_productora" xml:space="preserve">
+    <value>Producing force</value>
+  </data>
+  <data name="fuerza_productora_1" xml:space="preserve">
+    <value>We represent:
+
+more than 5,000 beekeepers throughout Mexico and
+
+We have an agreement with the 3 main packaging companies that meet the strictest export requirements, to be able to supply, from 350-gram jars to 300-kilogram barrels</value>
+  </data>
+  <data name="la_miel_en_el_mundo" xml:space="preserve">
+    <value>Honey in the world</value>
+  </data>
+  <data name="la_miel_en_el_mundo_1" xml:space="preserve">
+    <value>Honey is a food, so it is regulated by specialized agencies around the world such as:
+The United States Food and Drug Administration or Food and Drug Administration, FDA,
+The Alimentarius Codex which is an initiative of the World Health Organization, WHO and
+The European Food Safety Authority or European Food Safety Authority, EFSA.
+
+In Mexico, the regulatory authority is SENASICA, belonging to the Official Agricultural Organization and which homologates its principles and regulations to those of the FDA of its commercial partner.
+
+Under these standards the FAO considers that, for honey, the five main honey producers are China, Russia, Mexico, the United States and Spain</value>
+  </data>
+  <data name="la_miel_en_el_mundo_2" xml:space="preserve">
+    <value>The most appreciated honeys are those from Brazil, Spain and Mexico for their purity, medicinal properties and nutritional properties.
+
+The National Library of Medicine of the United States registers 320 types of honey; and in Mexico there are more than 250 of them</value>
+  </data>
+  <data name="maquinaria" xml:space="preserve">
+    <value>Industrial machinery</value>
+  </data>
+  <data name="maquinaria_1" xml:space="preserve">
+    <value>We have associated with the best construction machinery lessors</value>
+  </data>
+  <data name="miel" xml:space="preserve">
+    <value>Honey</value>
+  </data>
+  <data name="miel_mexicana_multiflora" xml:space="preserve">
+    <value>Multiflora mexican honey</value>
+  </data>
+  <data name="miel_mexicana_multiflora_1" xml:space="preserve">
+    <value>It is the most sold in Mexico, the United States of America, and Asia, since the producing bees are MELIFERAS, which travel through many regions of the vast Mexican territory. Producing honey with a mixture of flavors and consistencies.
+
+Mexican beekeepers homogenize it by creating a flavor standard known throughout the world for a sweet taste with a touch of acid that makes it exquisite.</value>
+  </data>
+  <data name="miel_mexicana_uniflora" xml:space="preserve">
+    <value>Uniflora mexican honey</value>
+  </data>
+  <data name="miel_mexicana_uniflora_1" xml:space="preserve">
+    <value>In Mexico there are endemic flowers that produce pollen that, when processed by the bee, create a sweet, semi-acid, semi-bitter honey</value>
+  </data>
+  <data name="miel_mexicana_uniflora_2" xml:space="preserve">
+    <value>Mexican endemic honeys are Mezquite, Tojonal, Aguacate, Dzizilche, Jabín</value>
+  </data>
+  <data name="miel_mexicana_uniflora_3" xml:space="preserve">
+    <value>The advantage of Mexican Honey, over other countries, is that it is harvested throughout the year due to its mild climate.
+
+An example is ORANGE honey, whose honey is "small light amber drops" which is the sweet honey of other citrus fruits.
+
+Its flavor is delicate and very floral, it is a type of honey that hardly crystallizes.
+
+Its flavor combines perfectly with infusions and fruit desserts.</value>
+  </data>
+  <data name="proceso_de_venta_paso1" xml:space="preserve">
+    <value>Sale process: (step 1)</value>
+  </data>
+  <data name="proceso_de_venta_paso1_1" xml:space="preserve">
+    <value>Choose the product from our 2021 catalog and check the stock quantities</value>
+  </data>
+  <data name="proceso_de_venta_paso2" xml:space="preserve">
+    <value>Sale process: (step 2)</value>
+  </data>
+  <data name="proceso_de_venta_paso2_1" xml:space="preserve">
+    <value>Call our office in Mexico at +52 5547392178 from Monday to Friday from 10 a.m. to 5 p.m. for shipping information and delivery time and place the order</value>
+  </data>
+  <data name="proceso_de_venta_paso3" xml:space="preserve">
+    <value>Sale process: (step 3)</value>
+  </data>
+  <data name="proceso_de_venta_paso3_1" xml:space="preserve">
+    <value>Verified the amount, quantity and type of packaging, the invoice and the payment method will be sent to you</value>
+  </data>
+  <data name="proceso_de_venta_paso4" xml:space="preserve">
+    <value>Sale process: (step 4)</value>
+  </data>
+  <data name="proceso_de_venta_paso4_1" xml:space="preserve">
+    <value>Our transporter and / or exporter company will deliver it where you need it</value>
+  </data>
+  <data name="productos_sustentables" xml:space="preserve">
+    <value>Sustainable inputs</value>
+  </data>
+  <data name="productos_sustentables_1" xml:space="preserve">
+    <value>We believe in sustainability as a mandatory part of in the industrial production, for this reason we commercialize any product with certificates of protection and benefit to nature</value>
+  </data>
+  <data name="productos_y_servicios" xml:space="preserve">
+    <value>Products and services</value>
+  </data>
+</root>

@@ -1,0 +1,663 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.DiaSymReader.Native.1.7.0\build\Microsoft.DiaSymReader.Native.props" Condition="Exists('..\packages\Microsoft.DiaSymReader.Native.1.7.0\build\Microsoft.DiaSymReader.Native.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9B73BF30-D0F6-45D8-8480-47AA6420AC00}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Generad</RootNamespace>
+    <AssemblyName>Generad</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44331</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Cng, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Cng.5.0.0\lib\net47\System.Security.Cryptography.Cng.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\estilos.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="img\606fb612c12257.38767455Processed.jpg" />
+    <Content Include="img\COMERSIALIZACI‡N 01,EQUIPO MêDICO,TOM‡GRAFO.jpg" />
+    <Content Include="img\COMERSIALIZACI‡N 02,EQUIPO MêDICO,RESONANCIA MAGNêTICA.jpg" />
+    <Content Include="img\COMERSIALIZACI‡N 03,EQUIPO MêDICO,IMAGENOLOG÷A.jpg" />
+    <Content Include="img\COMERSIALIZACI‡N 04,MAQUINARIA INDUSTRIAL,TROQUELADORAS.jpg" />
+    <Content Include="img\COMERSIALIZACI‡N 05,MAQUINARIA INDUSTRIAL,AUTOMATIZACI‡N.jpg" />
+    <Content Include="img\COMERSIALIZACI‡N 06,MIEL,MAPA PRODUCTORES.jpg" />
+    <Content Include="img\contrato.png" />
+    <Content Include="img\DOCUMENTAL, PORTADA1.jpg" />
+    <Content Include="img\DOCUMENTAL,PORTADA.jpg" />
+    <Content Include="img\f1.png" />
+    <Content Include="img\GENERA D,HOLDING,GOTA DE AGUA,MEDIA CARTA,130519 2.png" />
+    <Content Include="img\GENERA D,HOLDING,GOTA DE AGUA,MEDIA CARTA,130519.png" />
+    <Content Include="img\HOLDING 05,MEDIACI‡N DE CONFLICTO PENAL,TERMINAL 2 AICM,MêXICO.jpg" />
+    <Content Include="img\HOLDING 06,SOLUCI‡N ESTRUCTURAL,FACULTAD ARQUITECTURA UNAM,MêXICO.jpg" />
+    <Content Include="img\HOLDING 07,APLICACI‡N DE SISTEMAS DE CALIDAD,DISTRIBUIDOR VIAL ZARAGOZA,MêXICO.jpg" />
+    <Content Include="img\HOLDING 08,DETECCI‡N DE PROBLEMAS EN PLATAFORMAS Y SOLUCI‡N PARA AIR BUS 380,AICM,MêXICO.jpg" />
+    <Content Include="img\HOLDING 10,DESARROLLO DE INGENIER÷AS,NUEVO SENADO, MêXICO.jpg" />
+    <Content Include="img\HOLDING 11,ENCONTRAR PROBLEMA ACÈSTICO SOLUCIONARLO,SALA NEZAHUALCOYOTL.jpg" />
+    <Content Include="img\HOLDING 12,ONU SOLICITA CIUDADES TEMµTICAS SUSTENTABLES,CIUDAD MêDICA,PANAMµ.jpg" />
+    <Content Include="img\HOLDING 13,ELABORACI‡N DE NORMAS DE CONSTRUCCI‡N XOCHIMILCO,MêXICO.jpg" />
+    <Content Include="img\HOLDING 14,MANUAL DE CALIDAD EN LA CONSTRUCCI‡N,CDMX,MêXICO.jpg" />
+    <Content Include="img\HOLDING 15,ASOCIACI‡N IMPERMEABILINTES,MêXICO.jpg" />
+    <Content Include="img\HOLDING 16,RECTIFICACI‡N DE TANQUES DE ALMACENAMIENTO,PEMEX,MêXICO.jpg" />
+    <Content Include="img\HOLDING 17,DESARROLLO DE LOG÷STICA DE PUMABUS,UNAM,MêXICO.jpg" />
+    <Content Include="img\HOLDING 18,REESTRUCTURA ECON‡MICA,MêXICO.jpg" />
+    <Content Include="img\ico1.png" />
+    <Content Include="img\ico3.jpg" />
+    <Content Include="img\INICIO 01,SOLUCI‡N A PROBLEMAS HABITACIONALES, CIUDADES SUSTENTABLES.jpg" />
+    <Content Include="img\INICIO 02,DISE•O Y SUPERVISI‡N DRENAJE PROFUNDO CDMX.jpg" />
+    <Content Include="img\INICIO 03,WASTE TO ENERGY.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 01,ELABORACI‡N DE NORMAS,MêXICO.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 02,CURSOS DE INGENIER÷A DE COSTOS,SECRETAR÷A DE OBRAS,MêXICO.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 03,CURSOS DE INGENIER÷A DE COSTOS,SECRETAR÷A DE OBRAS,MêXICO.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 04,DESARROLLO HUMANO,1500 HORAS,MêXICO.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 05,DESARROLLO HUMANO,1000 HORAS,MêXICO.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 06,REFORMAS 2013,500 HORAS,MêXICO.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 07,INTERMEDIACI‡N JUDICIAL EN OBRA PÈBLICA,MêXICO.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 08,DESARROLLO HUMANO,MêXICO.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 09,DESARROLLO DE ISO 9001,IMPLANTACI‡N,EMBOTELLADORES,MêXICO.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 10,CURSO DE CALIDAD,MêXICO.jpg" />
+    <Content Include="img\INTEGRACI‡N PROFESIONAL 11,CURSOS DE SEGURIDAD,PEMEX,MêXICO.jpg" />
+    <Content Include="img\into-success-group-of-young-freelancers-in-the-office-have-conversation-and-smiling.jpg" />
+    <Content Include="img\lucro.png" />
+    <Content Include="img\NOSOTROS 01,CONSTRUCCI‡N CICLOPISTA MêXICO 68.jpg" />
+    <Content Include="img\NOSOTROS 02,CONSTRUCCI‡N,ESCUELAS DE BACHILLERATO.jpg" />
+    <Content Include="img\NOSOTROS 03,CONSTRUCCI‡N,UNIVERSIDAD PEDAG‡GICA NACIONAL,MêXICO.jpg" />
+    <Content Include="img\NOSOTROS 04,CONSTRUCCI‡N,MEDICINA LA SALLE.jpg" />
+    <Content Include="img\rompecabezas.png" />
+    <Content Include="img\top-tres.png" />
+    <Content Include="js\jquery-2.1.4.min.js" />
+    <Content Include="js\move-top.js" />
+    <Content Include="js\slick.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\GeneraDController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Comercializacion\Comercializacion.en.Designer.cs">
+      <DependentUpon>Comercializacion.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Comercializacion\Comercializacion.es.Designer.cs">
+      <DependentUpon>Comercializacion.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Comercializacion\Comercializacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Comercializacion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Contacto_div\Contacto_div.en.Designer.cs">
+      <DependentUpon>Contacto_div.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Contacto_div\Contacto_div.es.Designer.cs">
+      <DependentUpon>Contacto_div.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Contacto_div\Contacto_div.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Contacto_div.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Holding\Holding.es.Designer.cs">
+      <DependentUpon>Holding.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Holding\Holding.en.Designer.cs">
+      <DependentUpon>Holding.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Holding\Holding.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Holding.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Inicio\Inicio.en.Designer.cs">
+      <DependentUpon>Inicio.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Inicio\Inicio.Designer.cs">
+      <DependentUpon>Inicio.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Inicio\Inicio.es.Designer.cs">
+      <DependentUpon>Inicio.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Integracion\integracion.en.Designer.cs">
+      <DependentUpon>integracion.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Integracion\integracion.es.Designer.cs">
+      <DependentUpon>integracion.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Integracion\integracion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>integracion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Menu\Menu.Designer.cs">
+      <DependentUpon>Menu.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Menu\Menu.es.Designer.cs">
+      <DependentUpon>Menu.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Menu\Menu.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Menu.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Adaptacion\Adaptacion.en.Designer.cs">
+      <DependentUpon>Adaptacion.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Adaptacion\Adaptacion.es.Designer.cs">
+      <DependentUpon>Adaptacion.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Adaptacion\Adaptacion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Adaptacion.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Existimos\Existimos.en.Designer.cs">
+      <DependentUpon>Existimos.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Existimos\Existimos.es.Designer.cs">
+      <DependentUpon>Existimos.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Existimos\Existimos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Existimos.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Origen\Origen.es.Designer.cs">
+      <DependentUpon>Origen.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Origen\Origen.en.Designer.cs">
+      <DependentUpon>Origen.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Origen\Origen.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Origen.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Principios\Principios.es.Designer.cs">
+      <DependentUpon>Principios.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Principios\Principios.en.Designer.cs">
+      <DependentUpon>Principios.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Principios\Principios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Principios.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Nosotros\QuienesSomos\quienes_somos.en.Designer.cs">
+      <DependentUpon>quienes_somos.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\QuienesSomos\quienes_somos.es.Designer.cs">
+      <DependentUpon>quienes_somos.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\QuienesSomos\quienes_somos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>quienes_somos.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Renacer\Renacer.Designer.cs">
+      <DependentUpon>Renacer.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Renacer\Renacer.es.Designer.cs">
+      <DependentUpon>Renacer.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Renacer\Renacer.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Renacer.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Nosotros\sustentabilidad\Sustentabilidad.en.Designer.cs">
+      <DependentUpon>Sustentabilidad.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\sustentabilidad\Sustentabilidad.es.Designer.cs">
+      <DependentUpon>Sustentabilidad.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\sustentabilidad\Sustentabilidad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sustentabilidad.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Union\Union.es.Designer.cs">
+      <DependentUpon>Union.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Union\Union.en.Designer.cs">
+      <DependentUpon>Union.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Nosotros\Union\Union.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Union.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\GeneraD\Index.cshtml" />
+    <Content Include="Views\GeneraD\Holding.cshtml" />
+    <Content Include="Views\GeneraD\Nosotros.cshtml" />
+    <Content Include="Views\GeneraD\Comercializacion.cshtml" />
+    <Content Include="Views\GeneraD\IntegracionPersonal.cshtml" />
+    <Content Include="Views\GeneraD\Documental.cshtml" />
+    <Content Include="Views\GeneraD\Contacto.cshtml" />
+    <Content Include="Views\GeneraD\Index - Copia.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="fonts\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Comercializacion\Comercializacion.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Comercializacion.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Comercializacion\Comercializacion.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Comercializacion.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Comercializacion\Comercializacion.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Comercializacion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Contacto_div\Contacto_div.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Contacto_div.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Contacto_div\Contacto_div.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Contacto_div.es.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Contacto_div\Contacto_div.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Contacto_div.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Holding\Holding.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Holding.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Holding\Holding.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Holding.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Holding\Holding.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Holding.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Inicio\Inicio.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Inicio.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Inicio\Inicio.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Inicio.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Inicio\Inicio.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Inicio.es.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Integracion\integracion.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>integracion.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Integracion\integracion.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>integracion.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Integracion\integracion.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>integracion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Menu\Menu.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Menu.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Menu\Menu.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Menu.es.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Menu\Menu.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Menu.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Adaptacion\Adaptacion.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Adaptacion.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Adaptacion\Adaptacion.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Adaptacion.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Adaptacion\Adaptacion.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Adaptacion.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Existimos\Existimos.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Existimos.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Existimos\Existimos.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Existimos.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Existimos\Existimos.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Existimos.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Origen\Origen.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Origen.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Origen\Origen.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Origen.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Origen\Origen.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Origen.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Principios\Principios.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Principios.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Principios\Principios.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Principios.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Principios\Principios.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Principios.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\QuienesSomos\quienes_somos.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>quienes_somos.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\QuienesSomos\quienes_somos.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>quienes_somos.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\QuienesSomos\quienes_somos.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>quienes_somos.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Renacer\Renacer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Renacer.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Renacer\Renacer.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Renacer.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Renacer\Renacer.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Renacer.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\sustentabilidad\Sustentabilidad.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sustentabilidad.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\sustentabilidad\Sustentabilidad.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sustentabilidad.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\sustentabilidad\Sustentabilidad.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sustentabilidad.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Union\Union.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Union.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Union\Union.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Union.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Nosotros\Union\Union.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Union.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54970</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44331/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.DiaSymReader.Native.1.7.0\build\Microsoft.DiaSymReader.Native.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.DiaSymReader.Native.1.7.0\build\Microsoft.DiaSymReader.Native.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
