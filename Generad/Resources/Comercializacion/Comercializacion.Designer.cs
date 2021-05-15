@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Generad.Resources.Comercializacion {
+namespace Resources {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace Generad.Resources.Comercializacion {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Comercializacion {
+    public class Comercializacion {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Generad.Resources.Comercializacion {
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Generad.Resources.Comercializacion.Comercializacion", typeof(Comercializacion).Assembly);
@@ -51,7 +51,7 @@ namespace Generad.Resources.Comercializacion {
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Equipo médico.
         /// </summary>
-        internal static string equipo_medico {
+        public static string equipo_medico {
             get {
                 return ResourceManager.GetString("equipo_medico", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Somos asociados por proyecto con las marcas líderes de equipamiento médico para hospitales, clínicas y consultorios médicos.
         /// </summary>
-        internal static string equipo_medico_1 {
+        public static string equipo_medico_1 {
             get {
                 return ResourceManager.GetString("equipo_medico_1", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Fuerza productora.
         /// </summary>
-        internal static string fuerza_productora {
+        public static string fuerza_productora {
             get {
                 return ResourceManager.GetString("fuerza_productora", resourceCulture);
             }
@@ -94,7 +94,7 @@ namespace Generad.Resources.Comercializacion {
         ///
         ///tenemos convenio con las 3 principales envasadoras que cumplen con los más estrictos requisitos para exportación, para poder surtir, desde frascos de 350 gramos hasta barriles de 300 kilogramos.
         /// </summary>
-        internal static string fuerza_productora_1 {
+        public static string fuerza_productora_1 {
             get {
                 return ResourceManager.GetString("fuerza_productora_1", resourceCulture);
             }
@@ -103,7 +103,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a La miel en el mundo.
         /// </summary>
-        internal static string la_miel_en_el_mundo {
+        public static string la_miel_en_el_mundo {
             get {
                 return ResourceManager.GetString("la_miel_en_el_mundo", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace Generad.Resources.Comercializacion {
         ///
         ///En México la autoridad reguladora es SENASICA, perteneciente a la Organización Agropecuaria Oficial y que homologa sus principios y re [resto de la cadena truncado]&quot;;.
         /// </summary>
-        internal static string la_miel_en_el_mundo_1 {
+        public static string la_miel_en_el_mundo_1 {
             get {
                 return ResourceManager.GetString("la_miel_en_el_mundo_1", resourceCulture);
             }
@@ -128,7 +128,7 @@ namespace Generad.Resources.Comercializacion {
         ///
         ///La Biblioteca Nacional de Medicina de Estados Unidos registra 320 tipos de miel; y en México se tienen más de 250 de ellas.
         /// </summary>
-        internal static string la_miel_en_el_mundo_2 {
+        public static string la_miel_en_el_mundo_2 {
             get {
                 return ResourceManager.GetString("la_miel_en_el_mundo_2", resourceCulture);
             }
@@ -137,7 +137,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a maquinaria.
         /// </summary>
-        internal static string maquinaria {
+        public static string maquinaria {
             get {
                 return ResourceManager.GetString("maquinaria", resourceCulture);
             }
@@ -146,7 +146,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Contamos con asociados con los mejores arrendadores de maquinaria para construcción.
         /// </summary>
-        internal static string maquinaria_1 {
+        public static string maquinaria_1 {
             get {
                 return ResourceManager.GetString("maquinaria_1", resourceCulture);
             }
@@ -155,7 +155,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Miel.
         /// </summary>
-        internal static string miel {
+        public static string miel {
             get {
                 return ResourceManager.GetString("miel", resourceCulture);
             }
@@ -164,7 +164,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Miel mexicana multiflora.
         /// </summary>
-        internal static string miel_mexicana_multiflora {
+        public static string miel_mexicana_multiflora {
             get {
                 return ResourceManager.GetString("miel_mexicana_multiflora", resourceCulture);
             }
@@ -175,7 +175,7 @@ namespace Generad.Resources.Comercializacion {
         ///
         ///Los apicultores mexicanos la homogenizan creando un estandar de sabor conocido en todo el mundo por un sabor dulce con un toque  ácido que la hace exquisita.
         /// </summary>
-        internal static string miel_mexicana_multiflora_1 {
+        public static string miel_mexicana_multiflora_1 {
             get {
                 return ResourceManager.GetString("miel_mexicana_multiflora_1", resourceCulture);
             }
@@ -184,7 +184,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Miel mexicana uniflora.
         /// </summary>
-        internal static string miel_mexicana_uniflora {
+        public static string miel_mexicana_uniflora {
             get {
                 return ResourceManager.GetString("miel_mexicana_uniflora", resourceCulture);
             }
@@ -193,7 +193,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a En México se tienen flores endémicas que producen un polen que, al ser procesadas por la abeja, crean una miel dulce, semi ácida y semi amarga.
         /// </summary>
-        internal static string miel_mexicana_uniflora_1 {
+        public static string miel_mexicana_uniflora_1 {
             get {
                 return ResourceManager.GetString("miel_mexicana_uniflora_1", resourceCulture);
             }
@@ -202,7 +202,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Mieles endémicas mexicanas son la de Mezquite, Tojonal, Aguacate, Dzizilche, Jabín.
         /// </summary>
-        internal static string miel_mexicana_uniflora_2 {
+        public static string miel_mexicana_uniflora_2 {
             get {
                 return ResourceManager.GetString("miel_mexicana_uniflora_2", resourceCulture);
             }
@@ -217,7 +217,7 @@ namespace Generad.Resources.Comercializacion {
         ///
         ///Su sabor combina perfecto con infusiones y postres con fruta..
         /// </summary>
-        internal static string miel_mexicana_uniflora_3 {
+        public static string miel_mexicana_uniflora_3 {
             get {
                 return ResourceManager.GetString("miel_mexicana_uniflora_3", resourceCulture);
             }
@@ -226,7 +226,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Proceso de venta (paso 1).
         /// </summary>
-        internal static string proceso_de_venta_paso1 {
+        public static string proceso_de_venta_paso1 {
             get {
                 return ResourceManager.GetString("proceso_de_venta_paso1", resourceCulture);
             }
@@ -235,7 +235,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Elegir el producto de nuestro catálogo 2021 y revisar las cantidades de existencia.
         /// </summary>
-        internal static string proceso_de_venta_paso1_1 {
+        public static string proceso_de_venta_paso1_1 {
             get {
                 return ResourceManager.GetString("proceso_de_venta_paso1_1", resourceCulture);
             }
@@ -244,7 +244,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Proceso de venta (paso 2).
         /// </summary>
-        internal static string proceso_de_venta_paso2 {
+        public static string proceso_de_venta_paso2 {
             get {
                 return ResourceManager.GetString("proceso_de_venta_paso2", resourceCulture);
             }
@@ -253,7 +253,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Llamar al nuestra oficna en México al +52 5547392178 de Lunes a Viernes de 10 hrs a 17 hrs para información de envío y tiempo de enrtega y realizar el pedido.
         /// </summary>
-        internal static string proceso_de_venta_paso2_1 {
+        public static string proceso_de_venta_paso2_1 {
             get {
                 return ResourceManager.GetString("proceso_de_venta_paso2_1", resourceCulture);
             }
@@ -262,7 +262,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Proceso de venta (paso 3).
         /// </summary>
-        internal static string proceso_de_venta_paso3 {
+        public static string proceso_de_venta_paso3 {
             get {
                 return ResourceManager.GetString("proceso_de_venta_paso3", resourceCulture);
             }
@@ -271,7 +271,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Verificado el importe, la cantidad y el tipo de envasado, se le enviará la factura y la forma de pago.
         /// </summary>
-        internal static string proceso_de_venta_paso3_1 {
+        public static string proceso_de_venta_paso3_1 {
             get {
                 return ResourceManager.GetString("proceso_de_venta_paso3_1", resourceCulture);
             }
@@ -280,7 +280,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Proceso de venta (paso4).
         /// </summary>
-        internal static string proceso_de_venta_paso4 {
+        public static string proceso_de_venta_paso4 {
             get {
                 return ResourceManager.GetString("proceso_de_venta_paso4", resourceCulture);
             }
@@ -289,7 +289,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Nuestra empresa transportadora y/o exportadora la entregará en donde lo necesite.
         /// </summary>
-        internal static string proceso_de_venta_paso4_1 {
+        public static string proceso_de_venta_paso4_1 {
             get {
                 return ResourceManager.GetString("proceso_de_venta_paso4_1", resourceCulture);
             }
@@ -298,7 +298,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Productos sustentables.
         /// </summary>
-        internal static string productos_sustentables {
+        public static string productos_sustentables {
             get {
                 return ResourceManager.GetString("productos_sustentables", resourceCulture);
             }
@@ -307,7 +307,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Creemos en la sustentabilidad como una parte obligatoria de la producción industrial, por ello comercializamos cualquier producto con certificados de protección y de beneficio a la naruraleza.
         /// </summary>
-        internal static string productos_sustentables_1 {
+        public static string productos_sustentables_1 {
             get {
                 return ResourceManager.GetString("productos_sustentables_1", resourceCulture);
             }
@@ -316,7 +316,7 @@ namespace Generad.Resources.Comercializacion {
         /// <summary>
         ///   Busca una cadena traducida similar a Productos y servicios.
         /// </summary>
-        internal static string productos_y_servicios {
+        public static string productos_y_servicios {
             get {
                 return ResourceManager.GetString("productos_y_servicios", resourceCulture);
             }

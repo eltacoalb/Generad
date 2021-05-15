@@ -61,6 +61,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a .
+        /// </summary>
+        public static string Bandera {
+            get {
+                return ResourceManager.GetString("Bandera", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Comercialización.
         /// </summary>
         public static string Comercializacion {
@@ -115,7 +124,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Integración personal.
+        ///   Busca una cadena traducida similar a Integración profesional.
         /// </summary>
         public static string Integracionpersonal {
             get {
@@ -129,6 +138,16 @@ namespace Resources {
         public static string lang {
             get {
                 return ResourceManager.GetString("lang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap mexico {
+            get {
+                object obj = ResourceManager.GetObject("mexico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

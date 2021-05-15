@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Generad.Resources.Nosotros.QuienesSomos {
+namespace Resources {
     using System;
     
     
@@ -79,20 +79,101 @@ namespace Generad.Resources.Nosotros.QuienesSomos {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a somos una empresa holding con 54 años de experiencia, undiendo a 23 empresas, en las áreas: 
-        ///*legales (de proyectos individuales, de la empresa, comercial y asuntos penales), 
-        ///*financieros, 
-        ///*organizacionales, 
-        ///*ecológicos (sustentabilidad ambiental y económica), 
-        ///*de creación de infraestructura humana (constructoras , supervisoras y auditoras),
-        ///*de desarrollo de negocio, 
-        ///*de desarrollo y aplicación de tecnologías, 
-        ///*de comercio (importación y exportación), 
-        ///* de desarrollo humano (empresas capaci [resto de la cadena truncado]&quot;;.
+        ///   Busca una cadena traducida similar a De comercio (importación y exportación)..
+        /// </summary>
+        public static string Quienes_somos_10 {
+            get {
+                return ResourceManager.GetString("Quienes_somos_10", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a De desarrollo humano (empresas capacitadoras y de integración profesional) y *de investigación (universidades)..
+        /// </summary>
+        public static string Quienes_somos_11 {
+            get {
+                return ResourceManager.GetString("Quienes_somos_11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Que garantiza &quot;ganar-ganar&quot; a todos los participantes..
+        /// </summary>
+        public static string Quienes_somos_12 {
+            get {
+                return ResourceManager.GetString("Quienes_somos_12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a somos una empresa holding con 54 años de experiencia, uniendo a 23 empresas, en las áreas: .
         /// </summary>
         public static string Quienes_somos_2 {
             get {
                 return ResourceManager.GetString("Quienes_somos_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Legales (de proyectos individuales, de la empresa, comercial y asuntos penales)..
+        /// </summary>
+        public static string Quienes_somos_3 {
+            get {
+                return ResourceManager.GetString("Quienes_somos_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Financieros..
+        /// </summary>
+        public static string Quienes_somos_4 {
+            get {
+                return ResourceManager.GetString("Quienes_somos_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Organizacionales..
+        /// </summary>
+        public static string Quienes_somos_5 {
+            get {
+                return ResourceManager.GetString("Quienes_somos_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ecológicos (sustentabilidad ambiental y económica)..
+        /// </summary>
+        public static string Quienes_somos_6 {
+            get {
+                return ResourceManager.GetString("Quienes_somos_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a De creación de infraestructura humana (constructoras , supervisoras y auditoras)..
+        /// </summary>
+        public static string Quienes_somos_7 {
+            get {
+                return ResourceManager.GetString("Quienes_somos_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a De desarrollo de negocio..
+        /// </summary>
+        public static string Quienes_somos_8 {
+            get {
+                return ResourceManager.GetString("Quienes_somos_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a De desarrollo y aplicación de tecnologías..
+        /// </summary>
+        public static string Quienes_somos_9 {
+            get {
+                return ResourceManager.GetString("Quienes_somos_9", resourceCulture);
             }
         }
     }

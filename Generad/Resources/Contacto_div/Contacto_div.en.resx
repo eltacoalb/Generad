@@ -118,18 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Contacto" xml:space="preserve">
-    <value>Attention</value>
+    <value>Office hours:</value>
   </data>
   <data name="Contacto_1" xml:space="preserve">
     <value>Office +525547392178</value>
   </data>
   <data name="Contacto_2" xml:space="preserve">
-    <value>Office hours: Monday to Friday from 9 hrs. at 17 hrs. Central Mexico Time</value>
+    <value>Monday to Friday from 9 hrs. at 17 hrs.</value>
   </data>
   <data name="Contacto_3" xml:space="preserve">
     <value>Whatsapp: +525548334915</value>
   </data>
   <data name="Contacto_4" xml:space="preserve">
     <value>assistance@generad.net</value>
+  </data>
+  <data name="Contacto_5" xml:space="preserve">
+    <value>Central Mexico Time</value>
+  </data>
+  <data name="Contacto_titulo" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Telefono" xml:space="preserve">
+    <value>Phone</value>
   </data>
 </root>

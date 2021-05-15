@@ -185,4 +185,10 @@ Utilizamos soluciones transversales que beneficien a todas las partes</value>
   <data name="empresas_pequeñas_1" xml:space="preserve">
     <value>Ofrecemos modelos de negocios de alta recuperación de inversión, cartera de clientes y capital revolvente de fondos de inversión</value>
   </data>
+  <data name="independientes" xml:space="preserve">
+    <value>Independientes</value>
+  </data>
+  <data name="independientes_1" xml:space="preserve">
+    <value>Ofrecemos desarrollar su potencial y sumarlos a los proyectos conservando su individualidad</value>
+  </data>
 </root>

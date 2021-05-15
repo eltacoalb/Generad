@@ -1,290 +1,135 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-    Layout = null;
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    
-    <link href="~/css/estilos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <title>Genera-D</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="~/img/GENERA%20D,HOLDING,GOTA%20DE%20AGUA,MEDIA%20CARTA,130519.png" class="tam_logo" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class=" pst" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link active" href="@Url.Action("Index", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Inicio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Nosotros", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Holding", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Holding</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Comercializacion", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Comercializacion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("IntegracionPersonal", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Integracionpersonal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Documental", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Documental</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Contacto", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="inicio">
-        <div class="caja_texto">
-            <span class="titulo1">Desarrollo, Consultoria y Asesoria</span>
-            <span class="titulo2">LLEVE SU NEGOCIO A NUEVOS EXITOS</span>
-            <div class="c_botones">
-                <button class="boton1">SABER MAS</button>
-                <button class="boton2 post">COMENZAR</button>
-            </div>
-
-        </div>
-
-    </section>
-    <section class="seccion2">
-        <span class="t_sec1">Lo que hacemos</span>
-        <div class="c_img">
-            <div class="c1p">
-                <img src="~/img/lucro.png" alt="" class="impt">
-                <p class="p1i">
-                    Aumentar sus ganancias
-                    y las de su empresa.
-                </p>
-            </div>
-            <div class="c2p">
-                <img src="~/img/top-tres.png" alt="" class="impt">
-                <p class="p1i">
-                    Mantener competitiva
-                    a su empresa
-                </p>
-            </div>
-            <div class="c3p">
-                <img src="~/img/rompecabezas.png" alt="" class="impt">
-                <p class="p1i">
-                    Resolver los problemas
-                    que tenga su empresa
-                </p>
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+            <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown"><span>@Resources.Inicio.Presentacion_subtitulo</span></h2>
             </div>
         </div>
-    </section>
-    <section class="seccion2">
-        <span class="t_sec2">¿Como lo hacemos?</span>
-        <div class="c_img">
-            <div class="testimonials">
-                <div class="container">
-                    <div class="phpkida_testimonials_grids">
-                        <section class="center slider">
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>Escuchandolo y comprendiendo sus necesidades </p>
-                                    <div class="pk_testimonial_grid_pos">
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>Reuniendo a las mejores empresas para realizar un análisis de todos los factores que intervienen en la realidad de forma vertical y, transversalmente.</p>
-
-
-                                </div>
-                            </div>
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>Encontrando las mejores opciones de solución y proponiendolas a los clientes.</p>
-
-                                    <div class="pk_testimonial_grid_pos">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>Coordinando el conocimiento y experiencia de las mejores empresas y profesionistas de cada ramo para llevarlas a la realidad.</p>
-
-                                    <div class="pk_testimonial_grid_pos">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>Implementando la solución y dando seguimiento a los resultados.</p>
-
-                                    <div class="pk_testimonial_grid_pos">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+            <div class="carousel-container">
+                <h2 class="animate__animated animate__fadeInDown">@Resources.Inicio.Presentacion_eslogan</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <a href="" class="btn-get-started animate__animated animate__fadeInUp">@Resources.Inicio.Presentacion_conector</a>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-6">
+                        <a href="" class="btn-get-started animate__animated animate__fadeInUp">@Resources.Inicio.Presentacion_llave</a>
                     </div>
                 </div>
+
             </div>
-            <!-- //testimonials -->
-            <!-- carousal -->
-
-            <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-            <script type="text/javascript">
-                $(document).on('ready', function () {
-                    $(".center").slick({
-                        dots: true,
-                        infinite: true,
-                        centerMode: true,
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        responsive: [
-                            {
-                                breakpoint: 768,
-                                settings: {
-                                    arrows: true,
-                                    centerMode: false,
-                                    slidesToShow: 2
-                                }
-                            },
-                            {
-                                breakpoint: 480,
-                                settings: {
-                                    arrows: true,
-                                    centerMode: false,
-                                    centerPadding: '40px',
-                                    slidesToShow: 1
-                                }
-                            }
-                        ]
-                    });
-                });
-            </script>
-            <!-- //carousal -->
-            <!-- start-smooth-scrolling -->
-            <script type="text/javascript" src="js/move-top.js"></script>
-
-
         </div>
-    </section>
 
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+        </a>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+        </a>
 
-    <seccion class="scn1">
-        <div class="scnn1">
+    </div>
+</section><!-- End Hero -->
 
-            <div class="blog-card">
-                <input type="radio" name="select" id="tap-1" checked>
-                <input type="radio" name="select" id="tap-2">
-                <input type="radio" name="select" id="tap-3">
-                <input type="checkbox" id="imgTap">
-                <div class="sliders">
-                    <label for="tap-1" class="tap tap-1"></label>
-                    <label for="tap-2" class="tap tap-2"></label>
-                    <label for="tap-3" class="tap tap-3"></label>
+<main id="main">
+    <!-- ======= Features Section ======= -->
+    <section class="features">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>@Resources.Inicio.Lo_que_hacemos</h2>
+                <p>@Resources.Inicio.Lo_que_hacemos_1</p>
+            </div>
+
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-5">
+                    <img src="~/Content/img/features-2.svg" class="img-fluid" alt="">
                 </div>
-                <div class="inner-part ttt1">
-                    <label for="imgTap" class="img">
-                        <img class="img-1" src="#">
-                    </label>
-                    <div class="content content-1">
-                        <span class="111">Holding</span>
-
-                        <div class="text">
-                            Desarrollo de negocios nuevos. <br>
-                            Optimizar el desarrollo de negocios en
-                            proceso de ejecución. <br>
-                            Mediar en conflictos empresariales:
-                            técnicos, legales o de costos.
-                        </div>
-                        <button>Saber Mas</button>
-                    </div>
-                </div>
-                <div class="inner-part">
-                    <label for="imgTap" class="img">
-                        <img class="img-2" src="#">
-                    </label>
-                    <div class="content content-2">
-                        <span>Comercialización</span>
-
-                        <div class="text">
-                            Importar y exportar cualquier producto  que requiera <br>el cliente.
-                            <br>
-                            Ofrecer  la mejor calidad y precio al mercado <br> de salud, tecnológico, industrial y de alimentos.
-                        </div>
-                        <button>Saber Mas</button>
-                    </div>
-                </div>
-                <div class="inner-part">
-                    <label for="imgTap" class="img">
-                        <img class="img-3" src="#">
-                    </label>
-                    <div class="content content-3">
-                        <span>Integración profesional</span>
-
-                        <div class="text">
-                            Aumentar los conocimientos y habilidades de profesionistas, así como complementar su actitud acorde con las necesidades organizacionales.
-                        </div>
-                        <button>Saber Mas</button>
-                    </div>
+                <div class="col-md-7 pt-4">
+                    <h3>@Resources.Inicio.Lo_que_hacemos_2</h3>
+                    <p class="fst-italic">
+                        @Resources.Inicio.Lo_que_hacemos_3
+                    </p>
                 </div>
             </div>
 
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-5 order-1 order-md-2">
+                    <img src="~/Content/img/strategy.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5 order-2 order-md-1">
+                    <h3>@Resources.Inicio.Como_lo_hacemos</h3>
+                    <p class="fst-italic">
+                        @Resources.Inicio.Como_lo_hacemos_1
+                    </p>
+                    <p>
+                        @Resources.Inicio.Como_lo_hacemos_2
+                    </p>
+                    <p>
+                        @Resources.Inicio.Como_lo_hacemos_3
+                    </p>
+                    <p>
+                        @Resources.Inicio.Como_lo_hacemos_4
+                    </p>
+                    <p>
+                        @Resources.Inicio.Como_lo_hacemos_5
+                    </p>
+                </div>
+            </div>
+            <br />
+            <div class="section-title">
+                <h2>@Resources.Inicio.Areas_de_accion</h2>
+            </div>
+            <br />
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-5">
+                    <img src="~/Content/img/cooperacion.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5">
+                    <h3>@Resources.Inicio.Holding</h3>
+                    <ul>
+                        <li><i class="bi bi-check"></i>@Resources.Inicio.Holding_1</li>
+                        <li><i class="bi bi-check"></i>@Resources.Inicio.Holding_2</li>
+                        <li><i class="bi bi-check"></i>@Resources.Inicio.Holding_3</li>
+                    </ul>
+                </div>
+            </div>
 
-
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-5 order-1 order-md-2">
+                    <img src="~/Content/img/envio.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5 order-2 order-md-1">
+                    <h3>@Resources.Inicio.Comercializacion</h3>
+                    <p class="fst-italic">
+                        @Resources.Inicio.Comercializacion_1
+                    </p>
+                    <p>
+                        @Resources.Inicio.Comercializacion_2
+                    </p>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div class="col-md-5">
+                    <img src="~/Content/img/proceso-creativo.svg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5">
+                    <h3>@Resources.Inicio.Integracion_personal_1</h3>
+                    <p class="fst-italic">
+                        @Resources.Inicio.Integracion_personal_1
+                    </p>
+                </div>
+            </div>
         </div>
-    </seccion>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section class="contacto">
-
-        <div class="c_contacto c_prin">
-            <span class="text1">
-                Horario de oficina:
-                <br> lunes a viernes de 9 hrs. a 17 hrs.
-                <br> tiempo del centro de México
-                <span class="text2"> <br> Oficina +525547392178 </span>
-                <br>
-                <span class="text2"> <br>Whatsapp: +525548334915</span>
-                <br>
-                <span class="text2"> <br>asistencia@generad.one</span>
-
-            </span>
-
-        </div>
-
-    </section>
-    <section class="footer ">
-    </section>
-</body>
-</html>
+    </section><!-- End Features Section -->
+</main><!-- End #main -->

@@ -123,19 +123,37 @@
   <data name="Quienes_somos_1" xml:space="preserve">
     <value>Objetivo empresarial</value>
   </data>
+  <data name="Quienes_somos_10" xml:space="preserve">
+    <value>De comercio (importación y exportación).</value>
+  </data>
+  <data name="Quienes_somos_11" xml:space="preserve">
+    <value>De desarrollo humano (empresas capacitadoras y de integración profesional) y *de investigación (universidades).</value>
+  </data>
+  <data name="Quienes_somos_12" xml:space="preserve">
+    <value>Que garantiza "ganar-ganar" a todos los participantes.</value>
+  </data>
   <data name="Quienes_somos_2" xml:space="preserve">
-    <value>somos una empresa holding con 54 años de experiencia, undiendo a 23 empresas, en las áreas: 
-*legales (de proyectos individuales, de la empresa, comercial y asuntos penales), 
-*financieros, 
-*organizacionales, 
-*ecológicos (sustentabilidad ambiental y económica), 
-*de creación de infraestructura humana (constructoras , supervisoras y auditoras),
-*de desarrollo de negocio, 
-*de desarrollo y aplicación de tecnologías, 
-*de comercio (importación y exportación), 
-* de desarrollo humano (empresas capacitadoras y de integración profesional) y 
-*de investigación (universidades); 
-
-que garantiza "ganar-ganar" a todos los participantes</value>
+    <value>somos una empresa holding con 54 años de experiencia, uniendo a 23 empresas, en las áreas: </value>
+  </data>
+  <data name="Quienes_somos_3" xml:space="preserve">
+    <value>Legales (de proyectos individuales, de la empresa, comercial y asuntos penales).</value>
+  </data>
+  <data name="Quienes_somos_4" xml:space="preserve">
+    <value>Financieros.</value>
+  </data>
+  <data name="Quienes_somos_5" xml:space="preserve">
+    <value>Organizacionales.</value>
+  </data>
+  <data name="Quienes_somos_6" xml:space="preserve">
+    <value>Ecológicos (sustentabilidad ambiental y económica).</value>
+  </data>
+  <data name="Quienes_somos_7" xml:space="preserve">
+    <value>De creación de infraestructura humana (constructoras , supervisoras y auditoras).</value>
+  </data>
+  <data name="Quienes_somos_8" xml:space="preserve">
+    <value>De desarrollo de negocio.</value>
+  </data>
+  <data name="Quienes_somos_9" xml:space="preserve">
+    <value>De desarrollo y aplicación de tecnologías.</value>
   </data>
 </root>

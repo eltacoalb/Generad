@@ -1,293 +1,185 @@
-﻿
-@{
-    Layout = null;
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/estilos.css">
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+<main id="main">
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+    <!-- ======= About Us Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
 
-    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Style -->
-    <link rel="stylesheet" href="~/css/style.css">
-    <link rel="stylesheet" href="~/css/estilos.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <link href="~/css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <script type="text/javascript" src="~/js/jquery-2.1.4.min.js"></script>
-    <title>Genera-D</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="~/img/GENERA%20D,HOLDING,GOTA%20DE%20AGUA,MEDIA%20CARTA,130519.png" class="tam_logo" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class=" pst" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link active" href="@Url.Action("Index", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Inicio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Nosotros", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Holding", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Holding</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Comercializacion", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Comercializacion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("IntegracionPersonal", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Integracionpersonal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Documental", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Documental</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Contacto", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="c_todos c_prin">
-        <div class="caja_texto">
-            <span class="titulo1t">Holding</span>
-
-
-        </div>
-
-    </section>
-    <section class="seccion2">
-        <br>
-        <span class="t_sec1">Clientes Privados</span>
-        <div class="c_img">
-
-            <div class="testimonials">
-                <div class="container">
-                    <div class="phpkida_testimonials_grids">
-                        <section class="center slider">
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>Ofrecemos modelos de negocios de rápida recuperación de inversión con utilidad proporcional  </p>
-                                    <div class="pk_testimonial_grid_pos">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>Ofrecemos modelos de negocios de alta recuperación de inversión, cartera de clientes y capital revolvente de fondos de inversión</p>
-
-
-                                </div>
-                            </div>
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>Ofrecemos optimización de su modelo de negocio mediante auditorías técnicas, legales y financieras, propuesta de proyectos con financiamiento y su realización garantizada</p>
-
-                                    <div class="pk_testimonial_grid_pos">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>
-                                        Ofrecemos mediación de conflictos técnicos, legales y/o económicos con otras empresas o con gobiernos federales, gobiernos de estados o departamentos y/o gobiernos municipales.
-
-                                        Utilizamos soluciones transversales que beneficien a todas las partes
-                                    </p>
-
-                                    <div class="pk_testimonial_grid_pos">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>Ofrecemos optimización y auditoría a su modelo de negocio mediante asesoría y consultoría técnica y legal para conflictos empresariales, anteriores o actuales, además de ofrecer propuesta de proyectos con financiamiento y su realización garantizada mediante factoraje </p>
-
-                                    <div class="pk_testimonial_grid_pos">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>ofrecemos financiamiento, tecnología y supervisión legal para ASOCIACIONES PÚBLICO-PRIVADAS, CONCESIONES y ASIGNACIONES POR ESPECIALIDAD </p>
-
-                                    <div class="pk_testimonial_grid_pos">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="agileits_testimonial_grid">
-                                <div class="pk_testimonial_grid">
-                                    <p>Ofrecemos transversalmente mediación de conflictos técnicos, legales y/o económicos con otras empresas o con gobiernos federales, gobiernos de estados o departamentos y/o gobiernos municipales, con garantía de cobranza</p>
-
-                                    <div class="pk_testimonial_grid_pos">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>@Resources.Menu.Holding</h2>
             </div>
-            <!-- //testimonials -->
-            <!-- carousal -->
-
-            <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-            <script type="text/javascript">
-	$(document).on('ready', function() {
-	  $(".center").slick({
-		dots: true,
-		infinite: true,
-		centerMode: true,
-		slidesToShow: 2,
-		slidesToScroll: 2,
-		responsive: [
-			{
-			  breakpoint: 768,
-			  settings: {
-				arrows: true,
-				centerMode: false,
-				slidesToShow: 2
-			  }
-			},
-			{
-			  breakpoint: 480,
-			  settings: {
-				arrows: true,
-				centerMode: false,
-				centerPadding: '40px',
-				slidesToShow: 1
-			  }
-			}
-		 ]
-	  });
-	});
-            </script>
 
         </div>
-    </section>
+    </section><!-- End About Us Section -->
+    <!-- ======= clientes privados Section ======= -->
+    <section class="testimonials" data-aos="fade-up">
+        <div class="container">
 
-    <section class="seccion3">
-        <span class="t_sec2">Clientes de Gobierno</span>
-        <div class="c_img">
-            <div class="c1p">
-                <div class="testimonials">
-                    <div class="container">
-                        <div class="phpkida_testimonials_grids">
-                            <section class="center slider">
-                                <div class="agileits_testimonial_grid">
-                                    <div class="pk_testimonial_grid">
-                                        <p>
-                                            ofrecemos desarrollo de proyectos de infraestructura partiendo de las necesidades que requiera la población en las áreas de:
+            <div class="section-title">
+                <h2>@Resources.Holding.clientes_privados</h2>
+            </div>
 
-                                            SALUD (hospitales generales y de alta especialidad; de plantas de tratamiento, reciclamiento e incineración de Residuos Sólidos con generación de energía WTE y plantas de tratamiento de agua residual y plantas potabilizadoras),
+            <div class="testimonials-carousel swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="testimonial-item swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-6 video-box">
+                                <img src="~/Content/img/generad/HOLDING 05,MEDIACIÓN DE CONFLICTO PENAL,TERMINAL 2 AICM,MÉXICO.jpg" class="img-fluid"/>
+                            </div>
 
-                                            VIALIDADES TERRESTRES Y ACUÁTICAS (públicas o concesionadas), y
+                            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
 
-                                            CIUDADES SUSTENTABLES, SIN INVERSIÓN GUBERNAMENTAL.
-                                        </p>
-                                        <div class="pk_testimonial_grid_pos">
-
-                                        </div>
-                                    </div>
+                                <div class="icon-box">
+                                    <h4 class="title"><a href="">@Resources.Holding.empresas_micro</a></h4>
+                                    <p class="description">@Resources.Holding.empresas_micro_1</p>
                                 </div>
-                                <div class="agileits_testimonial_grid">
-                                    <div class="pk_testimonial_grid">
-                                        <p>Ofrecemos contactar a los gobiernos con las mejores y mas honestas empresas de diseño, dieseño arquitectónico, construcción, equipamiento de infraestrucura, operación y manteniminto de inmuebles  </p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="testimonial-item swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-6 video-box">
+                                <img src="~/Content/img/generad/HOLDING 06,SOLUCIÓN ESTRUCTURAL,FACULTAD ARQUITECTURA UNAM,MÉXICO.jpg" class="img-fluid" />
+                            </div>
 
-                                    </div>
+                            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+                                <div class="icon-box">
+                                    <h4 class="title"><a href="">@Resources.Holding.empresas_pequeñas</a></h4>
+                                    <p class="description">@Resources.Holding.empresas_pequeñas_1</p>
                                 </div>
-                                <div class="agileits_testimonial_grid">
-                                    <div class="pk_testimonial_grid">
-                                        <p>Ofrecemos financiamiento de infraestructura pública para ASOCIACIONES PÚBLICO-PRIVADAS</p>
+                            </div>
+                        </div>
+                    </div>
 
-                                        <div class="pk_testimonial_grid_pos">
+                    <div class="testimonial-item swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-6 video-box">
+                                <img src="~/Content/img/generad/HOLDING 07,APLICACIÓN DE SISTEMAS DE CALIDAD,DISTRIBUIDOR VIAL ZARAGOZA,MÉXICO.jpg" class="img-fluid" />
 
-                                        </div>
-                                    </div>
+                            </div>
+
+                            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+                                <div class="icon-box">
+                                    <h4 class="title"><a href="">@Resources.Holding.empresas_medianas</a></h4>
+                                    <p class="description">@Resources.Holding.empresas_medianas_1</p>
                                 </div>
-                                <div class="agileits_testimonial_grid">
-                                    <div class="pk_testimonial_grid">
-                                        <p>ofrecemos transversalmente mediación de conflictos técnicos, legales y/o económicos con empresas contratadas como contratistas o proveedores, profesionistas u otros gobiernos federales o gobiernos de estados o departamentos y/o gobiernos municipales</p>
 
-                                        <div class="pk_testimonial_grid_pos">
-
-                                        </div>
-                                    </div>
+                                <div class="icon-box">
+                                    <p class="description">@Resources.Holding.empresas_medianas_2</p>
                                 </div>
-                            </section>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="testimonial-item swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-6 video-box">
+                                <img src="~/Content/img/generad/HOLDING 08,DETECCIÓN DE PROBLEMAS EN PLATAFORMAS Y SOLUCIÓN PARA AIR BUS 380,AICM,MÉXICO.jpg" class="img-fluid" />
+                            </div>
+
+                            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+                                <div class="icon-box">
+                                    <h4 class="title"><a href="">@Resources.Holding.empresas_grandes</a></h4>
+                                    <p class="description">@Resources.Holding.empresas_grandes_1</p>
+                                </div>
+
+                                <div class="icon-box">
+                                    <p class="description">@Resources.Holding.empresas_grandes_2</p>
+                                    <p class="description">@Resources.Holding.empresas_grandes_3</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
-    </section>
+    </section><!-- End clientes privados Section -->
+    <!-- ======= clientes privados Section ======= -->
+    <section class="testimonials" data-aos="fade-up">
+        <div class="container">
 
-    <section class="seccion4">
-        <br>
-        <span class="t_sec1">Clientes Profesionales.</span>
-        <div class="c_img">
-            <div class="c1p113">
-                <div class="agileits_testimonial_grid">
-                    <div class="pk_testimonial_grid">
-                        <p>ofrecemos desarrollar su potencial y sumarlos a los proyectos conservando su individualidad</p>
+            <div class="section-title">
+                <h2>@Resources.Holding.clientes_de_gobiernos</h2>
+                <p>@Resources.Holding.clientes_de_gobiernos_1</p>
+            </div>
 
-                        <div class="pk_testimonial_grid_pos">
+            <div class="testimonials-carousel swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="testimonial-item swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
 
+                                <div class="icon-box">
+                                    <p class="description">@Resources.Holding.clientes_de_gobiernos_2</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 video-box">
+                                <img src="~/Content/img/generad/HOLDING 18,REESTRUCTURA ECONÓMICA,MÉXICO.jpg" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+                                <div class="icon-box">
+                                    <p class="description">@Resources.Holding.clientes_de_gobiernos_3</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 video-box">
+                                <img src="~/Content/img/generad/HOLDING 10,DESARROLLO DE INGENIERÍAS,NUEVO SENADO, MÉXICO.jpg" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item swiper-slide">
+                        <div class="row">
+                            <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+                                <div class="icon-box">
+                                    <p class="description">@Resources.Holding.clientes_de_gobiernos_4</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 video-box">
+                                <img src="~/Content/img/generad/HOLDING 11,ENCONTRAR PROBLEMA ACÚSTICO SOLUCIONARLO,SALA NEZAHUALCOYOTL.jpg" />
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section><!-- End clientes privados Section -->
+    <!-- ======= Why Us Section ======= -->
+    <section class="testimonials" data-aos="fade-up">
+        <div class="container">
 
+            <div class="section-title">
+                <h2>@Resources.Holding.independientes</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 video-box">
+                    <img src="~/Content/img/generad/HOLDING 15,ASOCIACIÓN IMPERMEABILINTES,MÉXICO.jpg" class="img-fluid" />
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+                    <div class="icon-box">
+                        <p class="description">@Resources.Holding.independientes_1</p>
+                    </div>
+
+                </div>
             </div>
 
         </div>
-    </section>
-
-
-
-    <section class="contacto pstters">
-        <div class="c_contacto c_prin">
-            <span class="text1">
-                Horario de oficina:
-                <br> lunes a viernes de 9 hrs. a 17 hrs.
-                <br> tiempo del centro de México
-                <span class="text2"> <br> Oficina +525547392178 </span>
-
-                <span class="text2"> <br>Whatsapp: +525548334915</span>
-
-                <span class="text2"> <br>asistencia@generad.one</span>
-
-            </span>
-
-        </div>
-
-    </section>
-    <section class="footer psssttwe ">
-    </section>
-</body>
-</html>
+    </section><!-- End Why Us Section -->
+</main><!-- End #main -->

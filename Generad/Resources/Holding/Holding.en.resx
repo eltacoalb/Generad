@@ -185,4 +185,10 @@ We use cross-cutting solutions that benefit all parties</value>
   <data name="empresas_pequeñas_1" xml:space="preserve">
     <value>We offer business models of high investment recovery, client portfolio and revolving capital of investment funds</value>
   </data>
+  <data name="independientes" xml:space="preserve">
+    <value>Independent</value>
+  </data>
+  <data name="independientes_1" xml:space="preserve">
+    <value>We offer to develop your potential and add them to projects while preserving their individuality</value>
+  </data>
 </root>

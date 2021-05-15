@@ -133,31 +133,34 @@
     <value>Business development and human development: skills</value>
   </data>
   <data name="disciplina_institucional_responsabilidad" xml:space="preserve">
-    <value>Disciplina institucional, responsabilidad y disposición</value>
+    <value>Institutional discipline, responsibility and disposition</value>
   </data>
   <data name="disciplina_institucional_responsabilidad_1" xml:space="preserve">
-    <value>Estandarizamos los criterios individuales en colectivos de la organización de conformidad con su misión y políticas empresariales y de calidad</value>
+    <value>We standardize individual criteria in groups of the organization in accordance with its mission and business and quality policies</value>
   </data>
   <data name="disciplina_institucional_responsabilidad_2" xml:space="preserve">
-    <value>Realizamos talleres lúdicos y vivenciales en lugares armónicos</value>
+    <value>We carry out playful and experiential workshops in harmonious places</value>
   </data>
   <data name="entrenamiento_y_formacion" xml:space="preserve">
-    <value>Entrenamiento y formación de empleados empresariales y de gobierno</value>
+    <value>Training and formation of corporate and government employees</value>
   </data>
   <data name="entrenamiento_y_formacion_1" xml:space="preserve">
-    <value>Realizamos evaluaciones objetivas, estandarizamos las habilidades requeridas y potenciamos las de especialidad</value>
+    <value>e carry out objective evaluations, standardize the required skills and enhance specialty skills</value>
+  </data>
+  <data name="entrenamiento_y_formacion_2" xml:space="preserve">
+    <value>We elaborate and give playful workshops, focused on your objectives to be achieved</value>
   </data>
   <data name="formacion_directiva" xml:space="preserve">
-    <value>Formación directiva</value>
+    <value>Manager training</value>
   </data>
   <data name="generales_y_especializados" xml:space="preserve">
-    <value>Generales y especializados para empresas y gobiernos</value>
+    <value>General and specialized for companies and governments</value>
   </data>
   <data name="generales_y_especializados_1" xml:space="preserve">
-    <value>Realizamos evaluaciones objetivas, estandarizamos los conocimeintos requeridos y potenciamos los de especialidad</value>
+    <value>we carry out objective evaluations, standardize the required skills and enhance specialty skills</value>
   </data>
   <data name="generales_y_especializados_2" xml:space="preserve">
-    <value>Elaboramos y/o impartimos cursos, seminarios, pláticas o conferencias, desde 1 persona en adelante</value>
+    <value>We prepare and / or give courses, seminars, talks or conferences, from 1 person onwards</value>
   </data>
   <data name="vision_de_negocio" xml:space="preserve">
     <value>Effective communication</value>

@@ -135,4 +135,13 @@
   <data name="Contacto_5" xml:space="preserve">
     <value>tiempo del centro de México</value>
   </data>
+  <data name="Contacto_titulo" xml:space="preserve">
+    <value>Contáctanos</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Telefono" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
 </root>

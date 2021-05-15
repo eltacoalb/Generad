@@ -1,223 +1,253 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="@Resources.Menu.lang">
+
 <head>
-    <meta charset="UTF-8">
-    <meta charset="UTF-8">
-    <link href="~/css/estilos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="~/css/style.css" rel="stylesheet" />
-    <script src="~/js/jquery-2.1.4.min.js"></script>
-    <title>Genera-D</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Comercialización - Genera-D</title>
+    <link rel="shortcut icon" href="~/Content/img/generad/GENERA D,HOLDING,GOTA DE AGUA,MEDIA CARTA,130519.png">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/Content/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="~/Content/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/Content/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/Content/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/Content/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/Content/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/Content/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: Moderna - v4.1.0
+    * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="~/img/GENERA%20D,HOLDING,GOTA%20DE%20AGUA,MEDIA%20CARTA,130519.png" class="tam_logo" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class=" pst" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item ">
-                    <a class="nav-link active" href="@Url.Action("Index", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Inicio<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Nosotros", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Holding", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Holding</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Comercializacion", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Comercializacion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("IntegracionPersonal", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Integracionpersonal</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Documental", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Documental</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="@Url.Action("Contacto", "GeneraD", new { lang = Resources.Menu.lang })">@Resources.Menu.Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="c_todos c_prin">
-        <div class="caja_texto">
-            <span class="titulo1tt">Comercialización</span>
 
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center ">
+        @Html.Partial("_MenuBar")
+    </header><!-- End Header -->
 
-        </div>
+    <main id="main">
 
-    </section>
-    <section class="seccion2">
-        <br>
-        <span class="t_sec1">Productos y Servicios</span>
-        <div class="c_img">
-            <div class="c1p 111">
-                <div class="caja1cl1">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="~/img/COMERSIALIZACI%E2%80%A1N%2002,EQUIPO%20M%C3%AADICO,RESONANCIA%20MAGN%C3%AATICA.jpg" alt="Equipo Medico">
-                        <div class="card-body">
-                            <h5 class="card-title">Equipo Medico</h5>
-                            <p class="card-text">Somos asociados por proyecto con las marcas líderes de equipamiento médico para hospitales, clínicas y consultorios médicos</p>
+        <!-- ======= About Us Section ======= -->
+        <section class="breadcrumbs">
+            <div class="container">
 
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>@Resources.Menu.Comercializacion</h2>
+                </div>
+
+            </div>
+        </section><!-- End About Us Section -->
+        <!-- ======= Services Section ======= -->
+        <section class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>@Resources.Comercializacion.productos_y_servicios</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up">
+                        <div class="icon-box icon-box-pink">
+                            <div class="icon"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIuMDA3IDUxMi4wMDciIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEyLjAwNyA1MTIuMDA3IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnPjxwYXRoIGQ9Im00NjcuMDA1IDI1Ny4wMDdoLTQ1Yy0xMS41MiAwLTIyLjAzIDQuMzUtMzAgMTEuNDktNy45Ny03LjE0LTE4LjQ4LTExLjQ5LTMwLTExLjQ5aC0xOTkuNDZjLTcuMjkgMC0xNC4yNSAxLjc0LTIwLjQ1IDQuODktNC4yNS02Ljk0LTEwLjQxLTEyLjgyLTE4LjIxLTE2LjcyLS4xMDMtLjA0MS4wOTIuMDQ5LTQzLjQxLTIxLjItMjIuMTMxLTExLjAzNS00OS4xNjYtMi4xMzktNjAuMyAyMC4xNWwtMTEuOTEgMjMuODF2MTYuNzNsMTAzLjc0IDUxLjM0aDM4NWwxNS0xNXYtMTljMC0yNC44MS0yMC4xOS00NS00NS00NXoiIGZpbGw9IiM2Y2JlYmUiLz48cGF0aCBkPSJtNTEyLjAwNSAzMDIuMDA3djE5bC0xNSAxNWgtMjQxdi03OWgxMDZjMTEuNTIgMCAyMi4wMyA0LjM1IDMwIDExLjQ5IDcuOTctNy4xNCAxOC40OC0xMS40OSAzMC0xMS40OWg0NWMyNC44MSAwIDQ1IDIwLjE5IDQ1IDQ1eiIgZmlsbD0iIzU5OWRhNSIvPjxwYXRoIGQ9Im00NjcuMDA1IDI1Ny4wMDdoLTQ1Yy0xMS41MiAwLTIyLjAzIDQuMzUtMzAgMTEuNDktNy45Ny03LjE0LTE4LjQ4LTExLjQ5LTMwLTExLjQ5aC0xOTkuNDZjLTcuMjkgMC0xNC4yNSAxLjc0LTIwLjQ1IDQuODktNC4yNS02Ljk0LTEwLjQxLTEyLjgyLTE4LjIxLTE2LjcyLS4xMDMtLjA0MS4wOTIuMDQ5LTQzLjQxLTIxLjItMjIuMTMxLTExLjAzNS00OS4xNjYtMi4xMzktNjAuMyAyMC4xNWwtMTEuOTEgMjMuODF2MTYuNzNsMTAzLjc0IDUxLjM0aDM4NWwxNS0xNXYtMTljMC0yNC44MS0yMC4xOS00NS00NS00NXptLTM0OS44MyAzNS4xMi0xMS45MSAyMy44MS03MC4xMS0zNC42OSAxMS44NS0yMy43YzMuNjAyLTcuMjA0IDEyLjQ2LTEwLjU0NSAyMC4yNS02LjY1bDQzLjI2IDIxLjE0YzcuMzYgMy43MSAxMC4zNSAxMi43MSA2LjY2IDIwLjA5em0yNTkuODMgMjguODhoLTI0MC43M2MxMy44NzktMjcuNzU4LS45NDUgMS45MDYgMTIuODUtMjUuNzEgMi41Ni01LjExIDcuNy04LjI5IDEzLjQyLTguMjloMTk5LjQ2YzguMjcgMCAxNSA2LjczIDE1IDE1em0xMDUgMGgtNzV2LTE5YzAtOC4yNyA2LjczLTE1IDE1LTE1aDQ1YzguMjcgMCAxNSA2LjczIDE1IDE1eiIgZmlsbD0iIzdiZDhkMyIvPjxwYXRoIGQ9Im00NjcuMDA1IDI1Ny4wMDdoLTQ1Yy0xMS41MiAwLTIyLjAzIDQuMzUtMzAgMTEuNDktNy45Ny03LjE0LTE4LjQ4LTExLjQ5LTMwLTExLjQ5aC0xMDZ2MzBoMTA2YzguMjcgMCAxNSA2LjczIDE1IDE1djE5aC0xMjF2MTVoMjQxbDE1LTE1di0xOWMwLTI0LjgxLTIwLjE5LTQ1LTQ1LTQ1em0xNSA2NGgtNzV2LTE5YzAtOC4yNyA2LjczLTE1IDE1LTE1aDQ1YzguMjcgMCAxNSA2LjczIDE1IDE1eiIgZmlsbD0iIzZjYmViZSIvPjxwYXRoIGQ9Im00MzEuMDA1IDM5Mi4wMDdjMCA4LjI4LTYuNzIgMTUtMTUgMTVoLTMyMGMtOC4yOCAwLTE1LTYuNzItMTUtMTVzNi43Mi0xNSAxNS0xNWgzMjBjOC4yOCAwIDE1IDYuNzIgMTUgMTV6IiBmaWxsPSIjZDhlMWZkIi8+PHBhdGggZD0ibTQzMS4wMDUgMzkyLjAwN2MwIDguMjgtNi43MiAxNS0xNSAxNWgtMTYwdi0zMGgxNjBjOC4yOCAwIDE1IDYuNzIgMTUgMTV6IiBmaWxsPSIjYzJkMWYxIi8+PHBhdGggZD0ibTQxNi4wMDUgMzIxLjAwN2gtMzIwYy04LjI4IDAtMTUgNi43Mi0xNSAxNXYxMjhjMCA4LjI4IDYuNzIgMTUgMTUgMTVoMzIwYzguMjggMCAxNS02LjcyIDE1LTE1di0xMjhjMC04LjI4LTYuNzItMTUtMTUtMTV6bS0xNSAxMjhoLTI5MHYtOThoMjkweiIgZmlsbD0iI2U5ZWRmZCIvPjxwYXRoIGQ9Im00MzEuMDA1IDMzNi4wMDd2MTI4YzAgOC4yOC02LjcyIDE1LTE1IDE1aC0xNjB2LTMwaDE0NXYtOThoLTE0NXYtMzBoMTYwYzguMjggMCAxNSA2LjcyIDE1IDE1eiIgZmlsbD0iI2Q4ZTFmZCIvPjxwYXRoIGQ9Im0xMjguMDA1IDQ2NC4wMDdjMCAxNy42NzMtMTQuMzI3IDMzLTMyIDMzcy0zMi0xNS4zMjctMzItMzMgMTQuMzI3LTMyIDMyLTMyIDMyIDE0LjMyNyAzMiAzMnoiIGZpbGw9IiNlOWVkZmQiLz48cGF0aCBkPSJtOTYuMDA1IDUxMi4wMDdjLTI2LjAzOCAwLTQ3LTIyLjA2NC00Ny00OCAwLTI1LjkxNiAyMS4wODQtNDcgNDctNDdzNDcgMjEuMDg0IDQ3IDQ3YzAgMjUuOTM1LTIwLjk2MSA0OC00NyA0OHptMC02NWMtOS4zNzQgMC0xNyA3LjYyNi0xNyAxNyAwIDkuNTg5IDcuOTQ0IDE4IDE3IDE4czE3LTguNDExIDE3LTE4YzAtOS4zNzQtNy42MjYtMTctMTctMTd6IiBmaWxsPSIjZDhlMWZkIi8+PHBhdGggZD0ibTQ0OC4wMDUgNDY0LjAwN2MwIDE3LjY3My0xNC4zMjcgMzMtMzIgMzNzLTMyLTE1LjMyNy0zMi0zMyAxNC4zMjctMzIgMzItMzIgMzIgMTQuMzI3IDMyIDMyeiIgZmlsbD0iI2Q4ZTFmZCIvPjxwYXRoIGQ9Im00MTYuMDA1IDUxMi4wMDdjLTI2LjAzOCAwLTQ3LTIyLjA2NC00Ny00OCAwLTI1LjkxNiAyMS4wODQtNDcgNDctNDdzNDcgMjEuMDg0IDQ3IDQ3YzAgMjUuOTM1LTIwLjk2MSA0OC00NyA0OHptMC02NWMtOS4zNzQgMC0xNyA3LjYyNi0xNyAxNyAwIDkuNTg5IDcuOTQ0IDE4IDE3IDE4czE3LTguNDExIDE3LTE4YzAtOS4zNzQtNy42MjYtMTctMTctMTd6IiBmaWxsPSIjYzJkMWYxIi8+PHBhdGggZD0ibTUxMi4wMDUgMzIxLjAwN3YxNWMwIDguMjgtNi43MiAxNS0xNSAxNS00MTMuMzkgMC0zODUuNjkyLjIzOC0zODguNzQtLjQ4LTIuMTEtLjUyOCA2LjU2OSAzLjYxMS0xMDAtNDkuMTMtNy4zMzUtMy42NjgtMTAuMzkzLTEyLjY1My02LjY4LTIwLjFsNi42OC0xMy4zNiAxMDcuMjUgNTMuMDd6IiBmaWxsPSIjNTk1MTU1Ii8+PHBhdGggZD0ibTUxMi4wMDUgMzIxLjAwN3YxNWMwIDguMjgtNi43MiAxNS0xNSAxNWgtMjQxdi0zMHoiIGZpbGw9IiM0NjQxNDEiLz48cGF0aCBkPSJtMzY4LjczOSAyMDcuMDFjLTUuNTAzIDAtMTAuOC0zLjAzOS0xMy40MjgtOC4yOTVsLTI0LTQ4Yy0zLjcwNS03LjQxLS43MDItMTYuNDE5IDYuNzA4LTIwLjEyNSA3LjQxMS0zLjcwNiAxNi40MTktLjcwMiAyMC4xMjQgNi43MDhsMjQgNDhjNS4wMjUgMTAuMDQ5LTIuMzg1IDIxLjcxMi0xMy40MDQgMjEuNzEyeiIgZmlsbD0iI2VlYmVhYSIvPjxwYXRoIGQ9Im0xNDMuMjgyIDIwNy4wMWMtMTEuMDIxIDAtMTguNDI0LTExLjY3My0xMy40MDQtMjEuNzExbDI0LTQ4YzMuNzA1LTcuNDExIDEyLjcxOC0xMC40MTIgMjAuMTI0LTYuNzA4IDcuNDEgMy43MDUgMTAuNDEzIDEyLjcxNSA2LjcwOCAyMC4xMjVsLTI0IDQ4Yy0yLjYyOCA1LjI1NS03LjkyNiA4LjI5NC0xMy40MjggOC4yOTR6IiBmaWxsPSIjZjFjZGJlIi8+PHBhdGggZD0ibTIwNy45OTMgMjMxLjAxYy0xMS4wMjEgMC0xOC40MjQtMTEuNjczLTEzLjQwNC0yMS43MTFsOC0xNmMzLjcwNS03LjQxIDEyLjcxOS0xMC40MTIgMjAuMTI0LTYuNzA4IDcuNDEgMy43MDUgMTAuNDEzIDEyLjcxNSA2LjcwOCAyMC4xMjVsLTggMTZjLTIuNjI4IDUuMjU1LTcuOTI2IDguMjk0LTEzLjQyOCA4LjI5NHoiIGZpbGw9IiNmMWNkYmUiLz48cGF0aCBkPSJtMzA0LjAxNyAyMzEuMDFjLTUuNTAzIDAtMTAuOC0zLjAzOS0xMy40MjgtOC4yOTVsLTgtMTZjLTMuNzA1LTcuNDEtLjcwMi0xNi40MTkgNi43MDgtMjAuMTI1IDcuNDExLTMuNzA2IDE2LjQxOS0uNzAyIDIwLjEyNCA2LjcwOGw4IDE2YzUuMDI0IDEwLjA0OS0yLjM4NiAyMS43MTItMTMuNDA0IDIxLjcxMnoiIGZpbGw9IiNlZWJlYWEiLz48cGF0aCBkPSJtNDk3LjAwNSAzMC4wMDdoLTI0MWMtOC4yODQgMC0xNS02LjcxNi0xNS0xNXM2LjcxNi0xNSAxNS0xNWgyNDFjOC4yODQgMCAxNSA2LjcxNiAxNSAxNXMtNi43MTYgMTUtMTUgMTV6IiBmaWxsPSIjZDhlMWZkIi8+PHBhdGggZD0ibTI4OS40NjUgMTQuNDk3Yy0xOC40Ny0xOS4yNTQtNDguMzA1LTE5LjQwNS02Ni45MiAwLTguNzMgOS4xMS0xMy41NCAyMS4wMS0xMy41NCAzMy41MXYzMmMwIDguMjggNi43MiAxNSAxNSAxNWg2NGM4LjI4IDAgMTUtNi43MiAxNS0xNXYtMzJjMC0xMi41LTQuODEtMjQuNC0xMy41NC0zMy41MXoiIGZpbGw9IiNjMmQxZjEiLz48cGF0aCBkPSJtMzAzLjAwNSA0OC4wMDd2MzJjMCA4LjI4LTYuNzIgMTUtMTUgMTVoLTMydi05NWMyNS45OTYgMCA0NyAyMi4wMDYgNDcgNDh6IiBmaWxsPSIjYjFjMmUyIi8+PHBhdGggZD0ibTMyMC4wMDUgNjUuMDA3aC0xMjhjLTQzLjU2IDAtNzkgMzUuNDQtNzkgNzkgMCA4LjI4IDYuNzIgMTUgMTUgMTVoMjU2YzguMjggMCAxNS02LjcyIDE1LTE1IDAtNDMuNTYtMzUuNDQtNzktNzktNzl6IiBmaWxsPSIjZTllZGZkIi8+PHBhdGggZD0ibTM5OS4wMDUgMTQ0LjAwN2MwIDguMjgtNi43MiAxNS0xNSAxNWgtMTI4di05NGg2NGM0My41NiAwIDc5IDM1LjQ0IDc5IDc5eiIgZmlsbD0iI2Q4ZTFmZCIvPjxwYXRoIGQ9Im0zOTkuMDA1IDE0NC4wMDdjMCA4LjI4LTYuNzIgMTUtMTUgMTVoLTE1di0xNWMwLTI3LjAyLTIxLjk4LTQ5LTQ5LTQ5aC0xMjhjLTI3LjAyIDAtNDkgMjEuOTgtNDkgNDl2MTVoLTE1Yy04LjI4IDAtMTUtNi43Mi0xNS0xNSAwLTQzLjU2IDM1LjQ0LTc5IDc5LTc5aDEyOGM0My41NiAwIDc5IDM1LjQ0IDc5IDc5eiIgZmlsbD0iI2Q4ZTFmZCIvPjxwYXRoIGQ9Im0zOTkuMDA1IDE0NC4wMDdjMCA4LjI4LTYuNzIgMTUtMTUgMTVoLTE1di0xNWMwLTI3LjAyLTIxLjk4LTQ5LTQ5LTQ5aC02NHYtMzBoNjRjNDMuNTYgMCA3OSAzNS40NCA3OSA3OXoiIGZpbGw9IiNjMmQxZjEiLz48L2c+PC9zdmc+" style="width: 66%;height: 80%;" /></div>
+                            <h4 class="title"><a href="">@Resources.Comercializacion.equipo_medico</a></h4>
+                            <p class="description">@Resources.Comercializacion.equipo_medico_1</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box icon-box-cyan">
+                            <div class="icon"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMyIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNjQgNjQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTU1IDYyaC0zNGMtMy4zMTQgMC02LTIuNjg2LTYtNiAwLTMuMzE0IDIuNjg2LTYgNi02aDM0YzMuMzE0IDAgNiAyLjY4NiA2IDYgMCAzLjMxNC0yLjY4NiA2LTYgNnoiIGZpbGw9IiM1MzRmNDQiLz48Zz48cGF0aCBkPSJtMzMgNTBoMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtMjkgNTBoMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtMjUgNTBoMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtNDUgNTBoMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtNDEgNTBoMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtNTMgNTBoMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtMzcgNTBoMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtMjEgNTBoMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtMzMgNTloMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtMjkgNTloMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtMjUgNTloMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtNDUgNTloMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtNDEgNTloMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtMzcgNTloMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtMjEgNTloMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48ZyBmaWxsPSIjN2Y3ODZiIj48cGF0aCBkPSJtNTkuODg3IDU5LjQ3My0yLjQ3NS0yLjQ3NS0xLjQxNSAxLjQxNSAyLjQ3NSAyLjQ3NWMuNTQ4LS4zOSAxLjAyNi0uODY4IDEuNDE1LTEuNDE1eiIvPjxwYXRoIGQ9Im01Ny42NDYgNTYuOTk5aDMuMjY1Yy4wNTQtLjMyNi4wODktLjY1OC4wODktLjk5OSAwLS4zNDItLjAzNS0uNjc0LS4wOS0xaC0zLjI2NHoiLz48cGF0aCBkPSJtNTguNDcyIDUxLjExMi0yLjYyMyAyLjYyMyAxLjQxNSAxLjQxNSAyLjYyNC0yLjYyNGMtLjM5MS0uNTQ2LS44NjktMS4wMjQtMS40MTYtMS40MTR6Ii8+PHBhdGggZD0ibTE2LjExMiA1OS40NzJjLjM4OS41NDcuODY3IDEuMDI1IDEuNDE0IDEuNDE1bDIuNTY2LTIuNTY2LTEuNDE1LTEuNDE1eiIvPjxwYXRoIGQ9Im0xNSA1NmMwIC4zNDEuMDM1LjY3My4wOS45OTloMy45MXYtMmgtMy45MWMtLjA1NS4zMjctLjA5LjY1OS0uMDkgMS4wMDF6Ii8+PHBhdGggZD0ibTE2LjExMyA1Mi41MjcgMi41NjUgMi41NjUgMS40MTUtMS40MTUtMi41NjUtMi41NjVjLS41NDguMzktMS4wMjYuODY4LTEuNDE1IDEuNDE1eiIvPjwvZz48Zz48cGF0aCBkPSJtNTMgNTloMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtNDkgNTBoMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48Zz48cGF0aCBkPSJtNDkgNTloMnYzaC0yeiIgZmlsbD0iIzdmNzg2YiIvPjwvZz48cGF0aCBkPSJtNTUgNTloLTM0Yy0xLjY1NyAwLTMtMS4zNDMtMy0zIDAtMS42NTcgMS4zNDMtMyAzLTNoMzRjMS42NTcgMCAzIDEuMzQzIDMgMyAwIDEuNjU3LTEuMzQzIDMtMyAzeiIgZmlsbD0iI2ZmZiIvPjxnPjxwYXRoIGQ9Im0yMSA1NWg0djJoLTR6IiBmaWxsPSIjN2Y3ODZiIi8+PC9nPjxnPjxwYXRoIGQ9Im0yNyA1NWg2djJoLTZ6IiBmaWxsPSIjN2Y3ODZiIi8+PC9nPjxnPjxwYXRoIGQ9Im0zNSA1NWg2djJoLTZ6IiBmaWxsPSIjN2Y3ODZiIi8+PC9nPjxnPjxwYXRoIGQ9Im00MyA1NWg2djJoLTZ6IiBmaWxsPSIjN2Y3ODZiIi8+PC9nPjxnPjxwYXRoIGQ9Im01MSA1NWg0djJoLTR6IiBmaWxsPSIjN2Y3ODZiIi8+PC9nPjxnPjxwYXRoIGQ9Im0yNiA1Ny45OTljLTEuMTAzIDAtMi0uODk3LTItMnMuODk3LTIgMi0yIDIgLjg5NyAyIDItLjg5NyAyLTIgMnptMC0yLjAwMXYuMDAyeiIgZmlsbD0iIzYyNWQ1MSIvPjwvZz48Zz48cGF0aCBkPSJtMzQgNTcuOTk5Yy0xLjEwMyAwLTItLjg5Ny0yLTJzLjg5Ny0yIDItMiAyIC44OTcgMiAyLS44OTcgMi0yIDJ6bTAtMi4wMDF2LjAwMnoiIGZpbGw9IiM2MjVkNTEiLz48L2c+PGc+PHBhdGggZD0ibTQyIDU3Ljk5OWMtMS4xMDMgMC0yLS44OTctMi0ycy44OTctMiAyLTIgMiAuODk3IDIgMi0uODk3IDItMiAyem0wLTIuMDAxdi4wMDJ6IiBmaWxsPSIjNjI1ZDUxIi8+PC9nPjxnPjxwYXRoIGQ9Im01MCA1Ny45OTljLTEuMTAzIDAtMi0uODk3LTItMnMuODk3LTIgMi0yIDIgLjg5NyAyIDItLjg5NyAyLTIgMnptMC0yLjAwMXYuMDAyeiIgZmlsbD0iIzYyNWQ1MSIvPjwvZz48cGF0aCBkPSJtMjcgNDZoMjJ2NGgtMjJ6IiBmaWxsPSIjOWU5NjhkIi8+PHBhdGggZD0ibTUwIDMydi0yYzAtMi4yMDkgMS43OTEtNCA0LTRoMnYzaC0yYy0uNTUyIDAtMSAuNDQ4LTEgMXYyIiBmaWxsPSIjY2JjM2I2Ii8+PHBhdGggZD0ibTQ4IDM2di00aDh2NCIgZmlsbD0iIzYyNWQ1MSIvPjxwYXRoIGQ9Im02MCA0NmgtMTZ2LTEwaDEzYzIuNzYxIDAgNSAyLjIzOSA1IDV2M2MwIDEuMTA1LS44OTUgMi0yIDJ6IiBmaWxsPSIjZjdkODgxIi8+PHBhdGggZD0ibTQ0IDQ2aC0yMmMtMS4xMDUgMC0yLS44OTUtMi0yIDAtMS4xMDUuODk1LTIgMi0yaDIyeiIgZmlsbD0iIzYyNWQ1MSIvPjxwYXRoIGQ9Im00NCA0MmgtMjJ2LTEyYzAtNS41MjMgNC40NzctMTAgMTAtMTBoMTBjMS4xMDUgMCAyIC44OTUgMiAyeiIgZmlsbD0iI2YyYzM1MSIvPjxnPjxwYXRoIGQ9Im0xNy4xOS0zLjkyOGgydjIwLjYxaC0yeiIgZmlsbD0iI2U3ZTRkZCIgdHJhbnNmb3JtPSJtYXRyaXgoLjI3NCAtLjk2MiAuOTYyIC4yNzQgNy4wNjYgMjIuMTE5KSIvPjwvZz48cGF0aCBkPSJtMTMgNDR2NWwzLTR2LTVsLTQtM2gtNmwtNCAzdjVsMyA0di01bDItMmg0eiIgZmlsbD0iI2YyYzM1MSIvPjxwYXRoIGQ9Im0zMC43ODEgMTYuMjE5IDIuMjE5LTIuMjE5LTEtNC00LTItMSAyaC0zbC0uOCAxLjYgNS4yMjIgMi42MTFjLjk1Ni40NzggMS43NTggMS4xNzMgMi4zNTkgMi4wMDh6IiBmaWxsPSIjZjJjMzUxIi8+PHBhdGggZD0ibTI0LjkyOSAyMi45MjljMS44MS0xLjgxIDQuMzEtMi45MjkgNy4wNzEtMi45MjkgMC0yLjQ1MS0xLjM4NS00LjY5My0zLjU3OC01Ljc4OWwtMTguNDIyLTkuMjExLS4wOTIuMDI4IDIuMDkyIDYuOTcyIDEzIDExeiIgZmlsbD0iI2Y3ZDg4MSIvPjxwYXRoIGQ9Im0yOSAzNWg5YzEuMTA1IDAgMi0uODk1IDItMnYtOGMwLTEuMTA1LS44OTUtMi0yLTJoLTEzLjEzNmMtMS43NyAxLjgwNC0yLjg2NCA0LjI3My0yLjg2NCA3djEyaDR2LTRjMC0xLjY1NyAxLjM0My0zIDMtM3oiIGZpbGw9IiNjN2UyZmMiLz48cGF0aCBkPSJtMTEgMzIgMS0yMC0yLjQxNi04LjA1NGMtLjM0Ny0xLjE1NS0xLjQxLTEuOTQ2LTIuNjE2LTEuOTQ2LTEuMTc1IDAtMi4yMTkuNzUyLTIuNTkgMS44NjctMS41NTUgNC42NjMtMS43NzUgOS42NjYtLjYzNyAxNC40NDdsMy4yNTkgMTMuNjg2IiBmaWxsPSIjZjJjMzUxIi8+PGc+PHBhdGggZD0ibTYuNSA3Ljk5OGMtLjgyNyAwLTEuNS0uNjczLTEuNS0xLjQ5OSAwLS44MjcuNjczLTEuNSAxLjUtMS41czEuNS42NzMgMS41IDEuNWMwIC44MjYtLjY3MyAxLjQ5OS0xLjUgMS40OTl6bTAtMS45OTljLS4yNzYgMC0uNS4yMjQtLjUuNSAwIC4yNzUuMjI0LjQ5OS41LjQ5OS4yNzUgMCAuNS0uMjI0LjUtLjQ5OSAwLS4yNzYtLjIyNS0uNS0uNS0uNXoiIGZpbGw9IiM2MjVkNTEiLz48L2c+PGc+PHBhdGggZD0ibTI3LjUgMTguOTk4Yy0uODI3IDAtMS41LS42NzMtMS41LTEuNDk5IDAtLjgyNy42NzMtMS41IDEuNS0xLjVzMS41LjY3MyAxLjUgMS41YzAgLjgyNi0uNjczIDEuNDk5LTEuNSAxLjQ5OXptMC0xLjk5OWMtLjI3NiAwLS41LjIyNC0uNS41IDAgLjI3NS4yMjQuNDk5LjUuNDk5LjI3NSAwIC41LS4yMjQuNS0uNDk5IDAtLjI3Ni0uMjI1LS41LS41LS41eiIgZmlsbD0iIzYyNWQ1MSIvPjwvZz48Zz48cGF0aCBkPSJtMzUgMzcuOTk5aDQuOTk5djEuOTk5aC00Ljk5OXoiIGZpbGw9IiM2MjVkNTEiLz48L2c+PGc+PHBhdGggZD0ibTQ2IDM3Ljk5OWgydjUuOTk5aC0yeiIgZmlsbD0iIzYyNWQ1MSIvPjwvZz48Zz48cGF0aCBkPSJtNDkgMzcuOTk5aDJ2NS45OTloLTJ6IiBmaWxsPSIjNjI1ZDUxIi8+PC9nPjxnPjxwYXRoIGQ9Im01MiAzNy45OTloMnY1Ljk5OWgtMnoiIGZpbGw9IiM2MjVkNTEiLz48L2c+PHBhdGggZD0ibTYgNTQtNCAzIDMgM3YybDctMS0yLTMgMi0zeiIgZmlsbD0iIzllOTY4ZCIvPjxwYXRoIGQ9Im0xMiAzN2gtNnYtM2MwLTEuNjU3IDEuMzQzLTMgMy0zIDEuNjU3IDAgMyAxLjM0MyAzIDN6IiBmaWxsPSIjNTM0ZjQ0Ii8+PHBhdGggZD0ibTIyIDMwdjEyaDR2LTRjMC0xLjY1NyAxLjM0My0zIDMtM2g2Ljk0OGMuNDY0LTEuMzYuNzI4LTIuODEzLjcyOC00LjMzMSAwLTIuODU0LS44OTgtNS40OTQtMi40MTctNy42NjloLTkuMzk1Yy0xLjc3IDEuODA0LTIuODY0IDQuMjczLTIuODY0IDd6IiBmaWxsPSIjZWJmN2ZlIi8+PC9nPjwvc3ZnPg==" style="width: 66%;height: 80%;" /></div>
+                            <h4 class="title"><a href="">@Resources.Comercializacion.maquinaria</a></h4>
+                            <p class="description">@Resources.Comercializacion.maquinaria_1</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box icon-box-green">
+                            <div class="icon"><img src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgaWQ9IkZsYXQiPjxyZWN0IGZpbGw9IiNkZmRmZGQiIGhlaWdodD0iMjQwIiByeD0iMjQiIHdpZHRoPSIzMzYiIHg9IjcyIiB5PSIyMTYiLz48cGF0aCBkPSJtMTEyIDIxNmgyNTZ2MjQwaC0yNTZ6IiBmaWxsPSIjODZiNjNiIi8+PHBhdGggZD0ibTMzMi45MjMgMjU3LjY5NGE3Ljk5MSA3Ljk5MSAwIDAgMCAtNi44NjMtMS40NTVsLTMyIDggMy44OCAxNS41MjIgMTEuMjI3LTIuODA3LTM1LjM0NiA1MC40OTMtOS40MjEtMjIuODMzYTggOCAwIDAgMCAtMTQuMDEyLTEuNDQzbC0zMy4zMyA0OS4wNDctOS45LTE5LjhhOCA4IDAgMCAwIC0xNC4xLS4zOTFsLTMyIDU2IDEzLjg5MiA3LjkzOCAyNC41ODQtNDMuMDIyIDkuMzE1IDE4LjYzMWE4IDggMCAwIDAgMTMuNzcyLjkxOGwzMi42NTQtNDguMDUyIDkuMzM0IDIyLjYwOWE4IDggMCAwIDAgMTMuOTQ5IDEuNTM1bDQxLjQ0Mi01OS4yMDV2Ni42MjFoMTZ2LTMyYTggOCAwIDAgMCAtMy4wNzctNi4zMDZ6IiBmaWxsPSIjYzZkYzNhIi8+PGcgZmlsbD0iIzc4YTczMiI+PHBhdGggZD0ibTEzNiA0MTZoMTZ2MTZoLTE2eiIvPjxwYXRoIGQ9Im0xMzYgMzg0aDE2djE2aC0xNnoiLz48cGF0aCBkPSJtMTM2IDM1MmgxNnYxNmgtMTZ6Ii8+PHBhdGggZD0ibTEzNiAzMjBoMTZ2MTZoLTE2eiIvPjxwYXRoIGQ9Im0xMzYgMjg4aDE2djE2aC0xNnoiLz48cGF0aCBkPSJtMTM2IDI1NmgxNnYxNmgtMTZ6Ii8+PHBhdGggZD0ibTE2OCA0MTZoMTZ2MTZoLTE2eiIvPjxwYXRoIGQ9Im0yMDAgNDE2aDE2djE2aC0xNnoiLz48cGF0aCBkPSJtMjMyIDQxNmgxNnYxNmgtMTZ6Ii8+PHBhdGggZD0ibTI2NCA0MTZoMTZ2MTZoLTE2eiIvPjxwYXRoIGQ9Im0yOTYgNDE2aDE2djE2aC0xNnoiLz48cGF0aCBkPSJtMzI4IDQxNmgxNnYxNmgtMTZ6Ii8+PHBhdGggZD0ibTE2OCAyNTZoNDB2MTZoLTQweiIvPjxwYXRoIGQ9Im0xNjggMjg4aDE2djE2aC0xNnoiLz48L2c+PHBhdGggZD0ibTcyIDM5MiAzNS4wMjktMzUuMDI5YTE2Ljk3MiAxNi45NzIgMCAwIDEgMTItNC45NzEgMTYuOTcxIDE2Ljk3MSAwIDAgMSAxNi45NzEgMTYuOTcxdjEuMDc2YTE2Ljk2NCAxNi45NjQgMCAwIDEgLTMuNzE5IDEwLjZsLTI0LjU2MiAzMC43YTE2Ljk2NCAxNi45NjQgMCAwIDAgLTMuNzE5IDEwLjZ2MjUuMDc2YTQwLjk3MSA0MC45NzEgMCAwIDEgLTEyIDI4Ljk3NyA0MC45NzEgNDAuOTcxIDAgMCAxIC0yOC45NzEgMTJoLTM5LjAyOXYtOTguMzM0YTg2LjgzMyA4Ni44MzMgMCAwIDEgNDgtNzcuNjY2eiIgZmlsbD0iI2ZkYmY5MiIvPjxwYXRoIGQ9Im00MTYuNzc0IDM4NC40N2ExNiAxNiAwIDAgMCAtMTYuNzc0IDE1Ljk4MiAxNiAxNiAwIDAgMCAtMzIgMCAxNiAxNiAwIDAgMCAtMzIgMHYtNDguNDUyYzAtOC42MTUtNi42MjEtMTYuMDI4LTE1LjIyNi0xNi40MzRhMTYgMTYgMCAwIDAgLTE2Ljc3NCAxNS45ODJ2OTYuOWwtMzUuNS0yOC40YTE2LjQzOSAxNi40MzkgMCAwIDAgLTEwLjI2OS0zLjZoLTEuMzZhMTYuNzU2IDE2Ljc1NiAwIDAgMCAtMTYuNDcxIDEyLjgxOSAxNi40NDkgMTYuNDQ5IDAgMCAwIDUuMzQgMTYuMTA1bDUwLjI2IDQzLjA4aDExMmEyNCAyNCAwIDAgMCAyNC0yNHYtNjMuNTUyYzAtOC42MTEtNi42MjEtMTYuMDI1LTE1LjIyNi0xNi40M3oiIGZpbGw9IiNmZGJmOTIiLz48cGF0aCBkPSJtNDU0LjA3MiAyMzJoLTMwLjA3MmwtNTYgNTZ2LTU2aC0xMDIuMDcyYTMzLjkyOCAzMy45MjggMCAwIDEgLTMzLjkyOC0zMy45Mjh2LTE0MC4xNDRhMzMuOTI4IDMzLjkyOCAwIDAgMSAzMy45MjgtMzMuOTI4aDE4OC4xNDRhMzMuOTI4IDMzLjkyOCAwIDAgMSAzMy45MjggMzMuOTI4djE0MC4xNDRhMzMuOTI4IDMzLjkyOCAwIDAgMSAtMzMuOTI4IDMzLjkyOHoiIGZpbGw9IiNjNmRjM2EiLz48cGF0aCBkPSJtNDE2IDExMnYtOGEyNCAyNCAwIDAgMCAtMjQtMjRoLTh2LThhMjQgMjQgMCAwIDAgLTI0LTI0IDI0IDI0IDAgMCAwIC0yNCAyNHY4aC04YTI0IDI0IDAgMCAwIC0yNCAyNHY4aC04YTI0IDI0IDAgMCAwIC0yNCAyNHY4aDE3NnYtOGEyNCAyNCAwIDAgMCAtMjQtMjR6IiBmaWxsPSIjODZiNjNiIi8+PHBhdGggZD0ibTM4NCAxMjBhMTYuMDE5IDE2LjAxOSAwIDAgMSAtMTYgMTZ2LTMyaC0xNnY1NmgtOGExNi4wMTkgMTYuMDE5IDAgMCAxIC0xNi0xNmgtMTZhMzIuMDM2IDMyLjAzNiAwIDAgMCAzMiAzMmg4djMyaDE2di01NmEzMi4wMzYgMzIuMDM2IDAgMCAwIDMyLTMyeiIgZmlsbD0iIzZjOTkyYSIvPjxwYXRoIGQ9Im0yNjQgMTkyaDE5MnYxNmgtMTkyeiIgZmlsbD0iI2E4YmYyOCIvPjxwYXRoIGQ9Im0yNjQgNDhoMzJ2MTZoLTMyeiIgZmlsbD0iI2I2Y2QzMSIvPjxwYXRoIGQ9Im0yNTYgODBoMjR2MTZoLTI0eiIgZmlsbD0iI2I2Y2QzMSIvPjxwYXRoIGQ9Im00MDggNDhoMzJ2MTZoLTMyeiIgZmlsbD0iI2I2Y2QzMSIvPjxwYXRoIGQ9Im00NDAgODBoMjR2MTZoLTI0eiIgZmlsbD0iI2I2Y2QzMSIvPjwvZz48L3N2Zz4=" style="width: 66%;height: 80%;" /></div>
+                            <h4 class="title"><a href="">@Resources.Comercializacion.productos_sustentables</a></h4>
+                            <p class="description">@Resources.Comercializacion.productos_sustentables_1</p>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <div class="c_img">
-                <div class="c1p2">
-                    <div class="caja1cl1">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="~/img/COMERSIALIZACI%E2%80%A1N%2004,MAQUINARIA%20INDUSTRIAL,TROQUELADORAS.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Maquinaria</h5>
-                                <p class="card-text">Contamos con asociados con los mejores arrendadores de maquinaria para construcción </p>
+        </section><!-- End Services Section -->
+        <!-- ======= About Section ======= -->
+        <section class="about" data-aos="fade-up">
+            <div class="container">
+                <div class="section-title">
+                    <h2>@Resources.Comercializacion.miel</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="~/Content/img/generad/COMERSIALIZACIÓN 06,MIEL,MAPA PRODUCTORES.jpg" class="img-fluid" alt="" />
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <h3>@Resources.Comercializacion.la_miel_en_el_mundo</h3>
+                        <p>
+                            @Resources.Comercializacion.la_miel_en_el_mundo_1
+                        </p>
+                        <p>
+                            @Resources.Comercializacion.la_miel_en_el_mundo_2
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+        <!-- ======= Features Section ======= -->
+        <section class="features">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>@Resources.Comercializacion.miel_mexicana_uniflora</h2>
+                </div>
+
+                <div class="row" data-aos="fade-up">
+                    <div class="pt-4">
+                        <p>
+                            @Resources.Comercializacion.miel_mexicana_uniflora_1
+                        </p>
+                        <p>
+                            @Resources.Comercializacion.miel_mexicana_uniflora_2
+                        </p>
+                        <p>
+                            @Resources.Comercializacion.miel_mexicana_uniflora_3
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <div class="section-title">
+                    <h2>@Resources.Comercializacion.miel_mexicana_multiflora</h2>
+                </div>
+
+                <div class="row" data-aos="fade-up">
+                    <div class="pt-5 order-2 order-md-1">
+                        <p>
+                            @Resources.Comercializacion.miel_mexicana_multiflora_1
+                        </p>
+                    </div>
+                </div>
+
+                <br />
+                <br />
+                <div class="section-title">
+                    <h2>@Resources.Comercializacion.fuerza_productora</h2>
+                </div>
+
+                <div class="row" data-aos="fade-up">
+                    <div class="pt-5">
+                        <p>@Resources.Comercializacion.fuerza_productora_1</p>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Features Section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col"><a href="#step1" class="btn btn-secondary redondo" data-toggle="collapse">@Resources.Comercializacion.proceso_de_venta_paso1</a></div>
+                    <div class="col"><a href="#step2" class="btn btn-secondary redondo" data-toggle="collapse">@Resources.Comercializacion.proceso_de_venta_paso2</a></div>
+                    <div class="col"><a href="#step3" class="btn btn-secondary redondo" data-toggle="collapse">@Resources.Comercializacion.proceso_de_venta_paso3</a></div>
+                    <div class="col"><a href="#step4" class="btn btn-secondary redondo" data-toggle="collapse">@Resources.Comercializacion.proceso_de_venta_paso4</a></div>
+                   
+                </div>
+                <br />
+                <div class="row">
+                    <ul>
+                        <li id="step1" class="bi collapse">
+                            <div>
+                                <p>@Resources.Comercializacion.proceso_de_venta_paso1_1</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="c_img">
-                <div class="c1p3">
-                    <div class="caja1cl1">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" src="~/img/INICIO%2001,SOLUCI%E2%80%A1N%20A%20PROBLEMAS%20HABITACIONALES,%20CIUDADES%20SUSTENTABLES.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Productos Sustentables</h5>
-                                <p class="card-text">creemos en la sustentabilidad como una parte obligatoria de la producción industrial, por ello comercializamos cualquier producto con certificados de protección y de beneficio a la naruraleza</p>
-
+                        </li>
+                        <li id="step2" class="bi collapse">
+                            <div>
+                                <p>@Resources.Comercializacion.proceso_de_venta_paso2_1</p>
                             </div>
-
-                        </div>
-                    </div>
+                        </li>
+                        <li id="step3" class="bi collapse">
+                            <div>
+                                <p>@Resources.Comercializacion.proceso_de_venta_paso3_1</p>
+                            </div>
+                        </li>
+                        <li id="step4" class="bi collapse">
+                            <div>
+                                <p>@Resources.Comercializacion.proceso_de_venta_paso4_1</p>
+                            </div>
+                        </li>
+                    </ul>
+                   
+                    
+                    
+                    
                 </div>
             </div>
+        </section>
+    </main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+        <div class="footer-top">
+            @Html.Partial("_Footer")
         </div>
 
-    </section>
-    <section class="seccion2">
-        <br>
-        <span class="t_sec1">La miel en el mundo.</span>
-        <div class="c_img7">
-            <div class="c1p">
-                <span class="mieltext" style="position: relative;right: 48vh;bottom: 5vh;font-family: 'Roboto';color: gray;font-weight: bold;">
-                    La miel es un alimento, por lo que lo regulan <br>
-                    organismos especializados en todo el mundo como:
-
-                </span>
-                <br>
-                <span style="position: relative;right: 45vh;text-align: right;font-family: 'Roboto';font-weight: lighter;color: gray;">
-                    La Administración de Comida y Drogas de los <br>
-                    Estados Unidos o Food and Drug Administration, <br>
-                    FDA, El Códex Alimentarius que es una iniciativa <br>
-                    de la Organización Mundial de la Salud, OMS y  <br>
-                    La Autoridad Europea de Seguridad Alimentaria o  <br>
-                    European Food Safety Authority, EFSA.  <br>
-
-                    En México la autoridad reguladora es SENASICA,  <br>
-                    perteneciente a la Organización Agropecuaria  <br>
-                    Oficial y que homologa sus principios y  <br>
-                    reglamentaciones a las de la FDA de su socio  <br>
-                    comercial.
-
-                    Bajo estos estándares la FAO considera que,  <br>
-                    para la miel, los cinco principales productores de <br>
-                    miel son China, Rusia, México, Estados Unidos y
-                    España     <br>
-                </span>
-
-                <img src="~/img/COMERSIALIZACI%E2%80%A1N%2006,MIEL,MAPA%20PRODUCTORES.jpg" alt="" class="mielimg">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
         </div>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary ppbtn" data-toggle="modal" data-target="#exampleModalLong">
-            Saber Mas
-        </button>
+    </footer><!-- End Footer -->
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">La Miel en el mundo.</h5>
-                        <button type="button" class="close " data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"></span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        la miel es un alimento, por lo que lo regulan organis.mos especializados en todo el mundo como:
-                        La Administración de Comida y Drogas de los Estados Unidos o Food and Drug Administration, FDA,
-                        El Códex Alimentarius que es una iniciativa de la Organización Mundial de la Salud, OMS y
-                        La Autoridad Europea de Seguridad Alimentaria o European Food Safety Authority, EFSA.
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-                        En México la autoridad reguladora es SENASICA, perteneciente a la Organización Agropecuaria Oficial y que homologa sus principios y reglamentaciones a las de la FDA de su socio comercial.
+    <!-- Vendor JS Files -->
+    <script src="~/Content/vendor/aos/aos.js"></script>
+    <script src="~/Content/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/Content/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/Content/vendor/php-email-form/validate.js"></script>
+    <script src="~/Content/vendor/purecounter/purecounter.js"></script>
+    <script src="~/Content/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/Content/vendor/waypoints/noframework.waypoints.js"></script>
+    <style>
+        .redondo {
+            display: block;
+            width: 200px;
+            height: 65px;
+            border-radius: 180px;
+            background:#68A4C4;
+        }
+    </style>
+    <!-- Template Main JS File -->
+    <script src="~/Scripts/js/main.js"></script>
 
-                        Bajo estos estándares la FAO considera que, para la miel, los cinco principales productores de miel son China, Rusia, México, Estados Unidos y España.
-                        las mieles más apreciadas son las de Brasil, España y México por su pureza, propiedades medicinales y propiedades alimenticias.
-
-                        La Biblioteca Nacional de Medicina de Estados Unidos registra 320 tipos de miel; y en México se tienen más de 250 de ellas
-
-                        en México se tienen flores endémicas que producen un polen que, al ser procesadas por la abeja, crean una miel dulce, semi ácida y semi amarga
-
-                        mieles endémicas mexicanas son la de Mezquite, Tojonal, Aguacate, Dzizilche, Jabín
-
-                        la ventaja de la Miel Mexicana, sobre los demás países, es que se cosecha durante todo el año por el clima tan bondadoso que tiene.
-
-                        es la más vendida en México, Estados Unidos de América, y Asia, ya que las abejas productoras MELÍFERAS, que viajan por muchas regiones del basto territorio mexicano. Produciendo miel de mezcla de sabores y consistencias.
-
-                        Los apicultores mexicanos la homogenizan creando un estandar de sabor conocido en todo el mundo por un sabor dulce con un toque  ácido que la hace exquisita
-                        representamos a:
-
-                        más de 5,000 apicultores en todo México y
-
-                        tenemos convenio con las 3 principales envasadoras que cumplen con los más estrictos requisitos para exportación, para poder surtir, desde frascos de 350 gramos hasta barriles de 300 kilogramos
-
-                        elegir el producto de nuestro catálogo 2021 y revisar las cantidades de existencia
-
-                        llamar al nuestra oficna en México al +52 5547392178 de Lunes a Viernes de 10 hrs a 17 hrs para información de envío y tiempo de enrtega y realizar el pedido
-
-
-                        verificado el importe, la cantidad y el tipo de envasado, se le enviará la factura y la forma de pago
-
-                        nuestra empresa transportadora y/o exportadora la entregará en donde lo necesite
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary " data-dismiss="modal">Close</button>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contacto pptsr">
-        <div class="c_contacto c_prin">
-            <span class="text1">
-                Horario de oficina:
-                <br> lunes a viernes de 9 hrs. a 17 hrs.
-                <br> tiempo del centro de México
-                <span class="text2"> <br> Oficina +525547392178 </span>
-
-                <span class="text2"> <br>Whatsapp: +525548334915</span>
-
-                <span class="text2"> <br>asistencia@generad.one</span>
-
-            </span>
-
-        </div>
-
-    </section>
-    <section class="footer ">
-    </section>
 </body>
+
 </html>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Generad.Resources.Holding {
+namespace Resources {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace Generad.Resources.Holding {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Holding {
+    public class Holding {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Generad.Resources.Holding {
         ///   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Generad.Resources.Holding.Holding", typeof(Holding).Assembly);
@@ -51,7 +51,7 @@ namespace Generad.Resources.Holding {
         ///   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Clientes de gobiernos.
         /// </summary>
-        internal static string clientes_de_gobiernos {
+        public static string clientes_de_gobiernos {
             get {
                 return ResourceManager.GetString("clientes_de_gobiernos", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Federal, estatal o municipal.
         /// </summary>
-        internal static string clientes_de_gobiernos_1 {
+        public static string clientes_de_gobiernos_1 {
             get {
                 return ResourceManager.GetString("clientes_de_gobiernos_1", resourceCulture);
             }
@@ -87,7 +87,7 @@ namespace Generad.Resources.Holding {
         ///
         ///CIUDADES SUSTENTABLES, SIN INVERSIÓN GUBERNAMENTAL.
         /// </summary>
-        internal static string clientes_de_gobiernos_2 {
+        public static string clientes_de_gobiernos_2 {
             get {
                 return ResourceManager.GetString("clientes_de_gobiernos_2", resourceCulture);
             }
@@ -96,7 +96,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Ofrecemos contactar a los gobiernos con las mejores y mas honestas empresas de diseño, dieseño arquitectónico, construcción, equipamiento de infraestrucura, operación y manteniminto de inmuebles.
         /// </summary>
-        internal static string clientes_de_gobiernos_3 {
+        public static string clientes_de_gobiernos_3 {
             get {
                 return ResourceManager.GetString("clientes_de_gobiernos_3", resourceCulture);
             }
@@ -105,7 +105,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Ofrecemos transversalmente mediación de conflictos técnicos, legales y/o económicos con empresas contratadas como contratistas o proveedores, profesionistas u otros gobiernos federales o gobiernos de estados o departamentos y/o gobiernos municipales.
         /// </summary>
-        internal static string clientes_de_gobiernos_4 {
+        public static string clientes_de_gobiernos_4 {
             get {
                 return ResourceManager.GetString("clientes_de_gobiernos_4", resourceCulture);
             }
@@ -114,7 +114,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Clientes privados.
         /// </summary>
-        internal static string clientes_privados {
+        public static string clientes_privados {
             get {
                 return ResourceManager.GetString("clientes_privados", resourceCulture);
             }
@@ -123,7 +123,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Clientes profesionales.
         /// </summary>
-        internal static string clientes_profesionales {
+        public static string clientes_profesionales {
             get {
                 return ResourceManager.GetString("clientes_profesionales", resourceCulture);
             }
@@ -132,7 +132,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Independientes.
         /// </summary>
-        internal static string clientes_profesionales_1 {
+        public static string clientes_profesionales_1 {
             get {
                 return ResourceManager.GetString("clientes_profesionales_1", resourceCulture);
             }
@@ -141,7 +141,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Ofrecemos desarrollar su potencial y sumarlos a los proyectos conservando su individualidad.
         /// </summary>
-        internal static string clientes_profesionales_2 {
+        public static string clientes_profesionales_2 {
             get {
                 return ResourceManager.GetString("clientes_profesionales_2", resourceCulture);
             }
@@ -150,7 +150,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Empresas grandes.
         /// </summary>
-        internal static string empresas_grandes {
+        public static string empresas_grandes {
             get {
                 return ResourceManager.GetString("empresas_grandes", resourceCulture);
             }
@@ -159,7 +159,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Ofrecemos optimización y auditoría a su modelo de negocio mediante asesoría y consultoría técnica y legal para conflictos empresariales, anteriores o actuales, además de ofrecer propuesta de proyectos con financiamiento y su realización garantizada mediante factoraje.
         /// </summary>
-        internal static string empresas_grandes_1 {
+        public static string empresas_grandes_1 {
             get {
                 return ResourceManager.GetString("empresas_grandes_1", resourceCulture);
             }
@@ -168,7 +168,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Ofrecemos financiamiento, tecnología y supervisión legal para ASOCIACIONES PÚBLICO-PRIVADAS, CONCESIONES y ASIGNACIONES POR ESPECIALIDAD.
         /// </summary>
-        internal static string empresas_grandes_2 {
+        public static string empresas_grandes_2 {
             get {
                 return ResourceManager.GetString("empresas_grandes_2", resourceCulture);
             }
@@ -177,7 +177,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Ofrecemos transversalmente mediación de conflictos técnicos, legales y/o económicos con otras empresas o con gobiernos federales, gobiernos de estados o departamentos y/o gobiernos municipales, con garantía de cobranza.
         /// </summary>
-        internal static string empresas_grandes_3 {
+        public static string empresas_grandes_3 {
             get {
                 return ResourceManager.GetString("empresas_grandes_3", resourceCulture);
             }
@@ -186,7 +186,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Empresas medianas.
         /// </summary>
-        internal static string empresas_medianas {
+        public static string empresas_medianas {
             get {
                 return ResourceManager.GetString("empresas_medianas", resourceCulture);
             }
@@ -195,7 +195,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Ofrecemos optimización de su modelo de negocio mediante auditorías técnicas, legales y financieras, propuesta de proyectos con financiamiento y su realización garantizada.
         /// </summary>
-        internal static string empresas_medianas_1 {
+        public static string empresas_medianas_1 {
             get {
                 return ResourceManager.GetString("empresas_medianas_1", resourceCulture);
             }
@@ -206,7 +206,7 @@ namespace Generad.Resources.Holding {
         ///
         ///Utilizamos soluciones transversales que beneficien a todas las partes.
         /// </summary>
-        internal static string empresas_medianas_2 {
+        public static string empresas_medianas_2 {
             get {
                 return ResourceManager.GetString("empresas_medianas_2", resourceCulture);
             }
@@ -215,7 +215,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Empresas micro.
         /// </summary>
-        internal static string empresas_micro {
+        public static string empresas_micro {
             get {
                 return ResourceManager.GetString("empresas_micro", resourceCulture);
             }
@@ -224,7 +224,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Ofrecemos modelos de negocios de rápida recuperación de inversión con utilidad proporcional.
         /// </summary>
-        internal static string empresas_micro_1 {
+        public static string empresas_micro_1 {
             get {
                 return ResourceManager.GetString("empresas_micro_1", resourceCulture);
             }
@@ -233,7 +233,7 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Empresas pequeñas.
         /// </summary>
-        internal static string empresas_pequeñas {
+        public static string empresas_pequeñas {
             get {
                 return ResourceManager.GetString("empresas_pequeñas", resourceCulture);
             }
@@ -242,9 +242,27 @@ namespace Generad.Resources.Holding {
         /// <summary>
         ///   Busca una cadena traducida similar a Ofrecemos modelos de negocios de alta recuperación de inversión, cartera de clientes y capital revolvente de fondos de inversión.
         /// </summary>
-        internal static string empresas_pequeñas_1 {
+        public static string empresas_pequeñas_1 {
             get {
                 return ResourceManager.GetString("empresas_pequeñas_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Independientes.
+        /// </summary>
+        public static string independientes {
+            get {
+                return ResourceManager.GetString("independientes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ofrecemos desarrollar su potencial y sumarlos a los proyectos conservando su individualidad.
+        /// </summary>
+        public static string independientes_1 {
+            get {
+                return ResourceManager.GetString("independientes_1", resourceCulture);
             }
         }
     }

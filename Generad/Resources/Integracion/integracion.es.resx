@@ -147,6 +147,9 @@
   <data name="entrenamiento_y_formacion_1" xml:space="preserve">
     <value>Realizamos evaluaciones objetivas, estandarizamos las habilidades requeridas y potenciamos las de especialidad</value>
   </data>
+  <data name="entrenamiento_y_formacion_2" xml:space="preserve">
+    <value>Elaboramos e impartimos talleres lúdicos, enfocados a sus objetivos a alcanzar</value>
+  </data>
   <data name="formacion_directiva" xml:space="preserve">
     <value>Formación directiva</value>
   </data>

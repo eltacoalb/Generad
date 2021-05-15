@@ -123,19 +123,38 @@
   <data name="Quienes_somos_1" xml:space="preserve">
     <value>Business objective</value>
   </data>
+  <data name="Quienes_somos_10" xml:space="preserve">
+    <value>Trade (import and export).</value>
+  </data>
+  <data name="Quienes_somos_11" xml:space="preserve">
+    <value>Human development (training companies and professional integration) and research (universities).</value>
+  </data>
+  <data name="Quienes_somos_12" xml:space="preserve">
+    <value>That guarantees "win-win" to all participants.</value>
+  </data>
   <data name="Quienes_somos_2" xml:space="preserve">
     <value>We are a holding company with 54 years of experience, comprising 23 companies, in the areas:
-* legal (individual projects, company, commercial and criminal matters),
-* financial,
-* organizational,
-* ecological (environmental and economic sustainability),
-* for the creation of human infrastructure (construction companies, supervisors and auditors),
-* business development,
-* development and application of technologies,
-* trade (import and export),
-* human development (training companies and professional integration) and
-* research (universities);
-
-that guarantees "win-win" to all participants</value>
+</value>
+  </data>
+  <data name="Quienes_somos_3" xml:space="preserve">
+    <value>Legal (individual projects, company, commercial and criminal matters).</value>
+  </data>
+  <data name="Quienes_somos_4" xml:space="preserve">
+    <value>Financial.</value>
+  </data>
+  <data name="Quienes_somos_5" xml:space="preserve">
+    <value>Organizational.</value>
+  </data>
+  <data name="Quienes_somos_6" xml:space="preserve">
+    <value>Ecological (environmental and economic sustainability).</value>
+  </data>
+  <data name="Quienes_somos_7" xml:space="preserve">
+    <value>For the creation of human infrastructure (construction companies, supervisors and auditors).</value>
+  </data>
+  <data name="Quienes_somos_8" xml:space="preserve">
+    <value>Business development.</value>
+  </data>
+  <data name="Quienes_somos_9" xml:space="preserve">
+    <value>Development and application of technologies,</value>
   </data>
 </root>

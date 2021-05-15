@@ -113,5 +113,32 @@ namespace Resources {
                 return ResourceManager.GetString("Contacto_5", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contáctanos.
+        /// </summary>
+        public static string Contacto_titulo {
+            get {
+                return ResourceManager.GetString("Contacto_titulo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Email.
+        /// </summary>
+        public static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Teléfono.
+        /// </summary>
+        public static string Telefono {
+            get {
+                return ResourceManager.GetString("Telefono", resourceCulture);
+            }
+        }
     }
 }
