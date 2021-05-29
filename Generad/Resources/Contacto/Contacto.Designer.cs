@@ -97,6 +97,69 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Te han contactado.
+        /// </summary>
+        public static string CorreoContacto_3 {
+            get {
+                return ResourceManager.GetString("CorreoContacto_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a La persona.
+        /// </summary>
+        public static string CorreoContacto_4 {
+            get {
+                return ResourceManager.GetString("CorreoContacto_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ha solicitado el documento.
+        /// </summary>
+        public static string CorreoContacto_5 {
+            get {
+                return ResourceManager.GetString("CorreoContacto_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a con Email.
+        /// </summary>
+        public static string CorreoContacto_6 {
+            get {
+                return ResourceManager.GetString("CorreoContacto_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a agregando el mensaje.
+        /// </summary>
+        public static string CorreoContacto_7 {
+            get {
+                return ResourceManager.GetString("CorreoContacto_7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a y teléfono.
+        /// </summary>
+        public static string CorreoContacto_8 {
+            get {
+                return ResourceManager.GetString("CorreoContacto_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a de la compañia.
+        /// </summary>
+        public static string CorreoContacto_9 {
+            get {
+                return ResourceManager.GetString("CorreoContacto_9", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Correo.
         /// </summary>
         public static string Email_form {

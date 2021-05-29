@@ -61,6 +61,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Clientes.
+        /// </summary>
+        public static string Clientes {
+            get {
+                return ResourceManager.GetString("Clientes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Evidencia.
         /// </summary>
         public static string documental {
@@ -70,11 +79,38 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Curricula.
+        ///   Busca una cadena traducida similar a Currícula.
         /// </summary>
         public static string documental_1 {
             get {
                 return ResourceManager.GetString("documental_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Galeria.
+        /// </summary>
+        public static string documental_2 {
+            get {
+                return ResourceManager.GetString("documental_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Todo.
+        /// </summary>
+        public static string documental_3 {
+            get {
+                return ResourceManager.GetString("documental_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Si usted esta interesado en más información, favor de enviarnos un e-mail con su petición..
+        /// </summary>
+        public static string documental_4 {
+            get {
+                return ResourceManager.GetString("documental_4", resourceCulture);
             }
         }
     }

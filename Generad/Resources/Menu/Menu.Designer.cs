@@ -70,7 +70,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Comercialización.
+        ///   Busca una cadena traducida similar a Commodities.
         /// </summary>
         public static string Comercializacion {
             get {
@@ -124,7 +124,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Integración profesional.
+        ///   Busca una cadena traducida similar a Integración Profesional.
         /// </summary>
         public static string Integracionpersonal {
             get {

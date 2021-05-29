@@ -70,11 +70,101 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Curricula.
+        ///   Busca una cadena traducida similar a Currícula.
         /// </summary>
         public static string documetal_forms_1 {
             get {
                 return ResourceManager.GetString("documetal_forms_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nuevos proyectos.
+        /// </summary>
+        public static string documetal_forms_2 {
+            get {
+                return ResourceManager.GetString("documetal_forms_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Selecciona.
+        /// </summary>
+        public static string opcion {
+            get {
+                return ResourceManager.GetString("opcion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Genera D S.A. de C.V..
+        /// </summary>
+        public static string opcion_1 {
+            get {
+                return ResourceManager.GetString("opcion_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ING. Jorge Suárez Pineda.
+        /// </summary>
+        public static string opcion_2 {
+            get {
+                return ResourceManager.GetString("opcion_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Plantas de incineración de residuos.
+        /// </summary>
+        public static string opcion_3 {
+            get {
+                return ResourceManager.GetString("opcion_3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ciudad médica sustentable.
+        /// </summary>
+        public static string opcion_4 {
+            get {
+                return ResourceManager.GetString("opcion_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Desarrollo de negocios sustentables.
+        /// </summary>
+        public static string opcion_5 {
+            get {
+                return ResourceManager.GetString("opcion_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Hospitales alta especialidad sustentables.
+        /// </summary>
+        public static string opcion_6 {
+            get {
+                return ResourceManager.GetString("opcion_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El tipo de documento es requerido.
+        /// </summary>
+        public static string tipo_error {
+            get {
+                return ResourceManager.GetString("tipo_error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El documento es requerido.
+        /// </summary>
+        public static string tipo_error_2 {
+            get {
+                return ResourceManager.GetString("tipo_error_2", resourceCulture);
             }
         }
     }

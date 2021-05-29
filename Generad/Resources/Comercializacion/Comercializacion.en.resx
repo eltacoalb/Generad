@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="commodities" xml:space="preserve">
+    <value>Commodities</value>
+  </data>
+  <data name="commodities_1" xml:space="preserve">
+    <value>Minerals and food</value>
+  </data>
   <data name="equipo_medico" xml:space="preserve">
     <value>Medical equipment</value>
   </data>
@@ -175,7 +181,7 @@ Mexican beekeepers homogenize it by creating a flavor standard known throughout 
     <value>In Mexico there are endemic flowers that produce pollen that, when processed by the bee, create a sweet, semi-acid, semi-bitter honey</value>
   </data>
   <data name="miel_mexicana_uniflora_2" xml:space="preserve">
-    <value>Mexican endemic honeys are Mezquite, Tojonal, Aguacate, Dzizilche, Jabín</value>
+    <value>Mexican endemic honeys are Mezquite, Tojonal, Avocado, Dzizilche, Jabín</value>
   </data>
   <data name="miel_mexicana_uniflora_3" xml:space="preserve">
     <value>The advantage of Mexican Honey, over other countries, is that it is harvested throughout the year due to its mild climate.
@@ -190,7 +196,7 @@ Its flavor combines perfectly with infusions and fruit desserts.</value>
     <value>Sale process: (step 1)</value>
   </data>
   <data name="proceso_de_venta_paso1_1" xml:space="preserve">
-    <value>Choose the product from our 2021 catalog and check the stock quantities</value>
+    <value>Choose </value>
   </data>
   <data name="proceso_de_venta_paso2" xml:space="preserve">
     <value>Sale process: (step 2)</value>
@@ -218,5 +224,8 @@ Its flavor combines perfectly with infusions and fruit desserts.</value>
   </data>
   <data name="productos_y_servicios" xml:space="preserve">
     <value>Products and services</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>See catalog</value>
   </data>
 </root>

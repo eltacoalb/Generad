@@ -79,7 +79,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Ofrecemos desarrollo de proyectos de infraestructura partiendo de las necesidades que requiera la población en las áreas de: 
+        ///   Busca una cadena traducida similar a ofrecemos desarrollo de proyectos de infraestructura partiendo de las necesidades que requiera la población en las áreas de: 
         ///
         ///SALUD (hospitales generales y de alta especialidad; de plantas de tratamiento, reciclamiento e incineración de Residuos Sólidos con generación de energía WTE y plantas de tratamiento de agua residual y plantas potabilizadoras), 
         ///
@@ -94,7 +94,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Ofrecemos contactar a los gobiernos con las mejores y mas honestas empresas de diseño, dieseño arquitectónico, construcción, equipamiento de infraestrucura, operación y manteniminto de inmuebles.
+        ///   Busca una cadena traducida similar a Ofrecemos contactar a los gobiernos con las mejores y mas honestas empresas de diseño, diseño arquitectónico, construcción, equipamiento de infraestrucura, operación y manteniminto de inmuebles.
         /// </summary>
         public static string clientes_de_gobiernos_3 {
             get {
@@ -103,11 +103,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Ofrecemos transversalmente mediación de conflictos técnicos, legales y/o económicos con empresas contratadas como contratistas o proveedores, profesionistas u otros gobiernos federales o gobiernos de estados o departamentos y/o gobiernos municipales.
+        ///   Busca una cadena traducida similar a Ofrecemos financiamiento de infraestructura pública para ASOCIACIONES PÚBLICO-PRIVADAS.
         /// </summary>
         public static string clientes_de_gobiernos_4 {
             get {
                 return ResourceManager.GetString("clientes_de_gobiernos_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ofrecemos transversalmente mediación de conflictos técnicos, legales y/o económicos con empresas contratadas como contratistas o proveedores, profesionistas u otros gobiernos federales o gobiernos de estados o departamentos y/o gobiernos municipales.
+        /// </summary>
+        public static string clientes_de_gobiernos_5 {
+            get {
+                return ResourceManager.GetString("clientes_de_gobiernos_5", resourceCulture);
             }
         }
         

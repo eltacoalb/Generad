@@ -117,10 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Clientes" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
   <data name="documental" xml:space="preserve">
     <value>Evidencia</value>
   </data>
   <data name="documental_1" xml:space="preserve">
-    <value>Curricula</value>
+    <value>Currícula</value>
+  </data>
+  <data name="documental_2" xml:space="preserve">
+    <value>Galeria</value>
+  </data>
+  <data name="documental_3" xml:space="preserve">
+    <value>Todo</value>
+  </data>
+  <data name="documental_4" xml:space="preserve">
+    <value>Si usted esta interesado en más información, favor de enviarnos un e-mail con su petición.</value>
   </data>
 </root>

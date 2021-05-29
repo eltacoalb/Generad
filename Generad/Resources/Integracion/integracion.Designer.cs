@@ -178,7 +178,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Realizamos evaluaciones objetivas, estandarizamos los conocimeintos requeridos y potenciamos los de especialidad.
+        ///   Busca una cadena traducida similar a Realizamos evaluaciones objetivas, estandarizamos los conocimientos requeridos y potenciamos los de especialidad.
         /// </summary>
         public static string generales_y_especializados_1 {
             get {

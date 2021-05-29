@@ -61,6 +61,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Commodities.
+        /// </summary>
+        public static string commodities {
+            get {
+                return ResourceManager.GetString("commodities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Minerales y alimentos.
+        /// </summary>
+        public static string commodities_1 {
+            get {
+                return ResourceManager.GetString("commodities_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Equipo médico.
         /// </summary>
         public static string equipo_medico {
@@ -233,7 +251,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Elegir el producto de nuestro catálogo 2021 y revisar las cantidades de existencia.
+        ///   Busca una cadena traducida similar a Elegir.
         /// </summary>
         public static string proceso_de_venta_paso1_1 {
             get {
@@ -251,7 +269,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Llamar al nuestra oficna en México al +52 5547392178 de Lunes a Viernes de 10 hrs a 17 hrs para información de envío y tiempo de enrtega y realizar el pedido.
+        ///   Busca una cadena traducida similar a Llamar al nuestra oficina en México al +52 5547392178 de Lunes a Viernes de 10 hrs a 17 hrs para información de envío y tiempo de enrtega y realizar el pedido.
         /// </summary>
         public static string proceso_de_venta_paso2_1 {
             get {
@@ -319,6 +337,15 @@ namespace Resources {
         public static string productos_y_servicios {
             get {
                 return ResourceManager.GetString("productos_y_servicios", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ver catálogo.
+        /// </summary>
+        public static string title {
+            get {
+                return ResourceManager.GetString("title", resourceCulture);
             }
         }
     }

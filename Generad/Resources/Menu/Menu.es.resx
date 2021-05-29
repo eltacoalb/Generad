@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Comercializacion" xml:space="preserve">
-    <value>Comercialización</value>
+    <value>Commodities</value>
   </data>
   <data name="Contacto" xml:space="preserve">
     <value>Contacto</value>
@@ -136,7 +136,7 @@
     <value>Inicio</value>
   </data>
   <data name="Integracionpersonal" xml:space="preserve">
-    <value>Integración profesional</value>
+    <value>Integración Profesional</value>
   </data>
   <data name="lang" xml:space="preserve">
     <value>en</value>

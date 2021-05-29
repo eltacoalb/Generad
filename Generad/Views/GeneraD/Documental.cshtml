@@ -1,5 +1,5 @@
 ﻿@using Generad.Models
-@model ContactoModel
+@model DocumentalModel
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -25,222 +25,385 @@
 
                 <div class="container">
                     <div class="section-title">
-                        <h2>Evidencia</h2>
+                        <h2>@Resources.Documental.documental</h2>
                     </div>
-                    @using (Html.BeginForm("Documetal_form", "GeneraD", FormMethod.Post, new { id = "Form1", @class = "php-email-form" }))
-                    {
-                        @Html.AntiForgeryToken()
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8">
+                            @using (Html.BeginForm("Documetal_form", "GeneraD", FormMethod.Post, new { id = "Form1", @class = "php-email-form2" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <center>
+                                    <h4>@Resources.Documental.documental_4</h4>
+                                </center>
+                                <center>
+                                    <div class="form-group mt-3">
+                                        @Html.EditorFor(model => model.Nombre_form, new { htmlAttributes = new { @class = "form-control", placeholder = Resources.Contacto.Nombre_form } })
+                                        @Html.ValidationMessageFor(model => model.Nombre_form, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        @Html.EditorFor(model => model.Email_form, new { htmlAttributes = new { @class = "form-control", placeholder = Resources.Contacto.Email_form } })
+                                        @Html.ValidationMessageFor(model => model.Email_form, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        @{
+                                            List<SelectListItem> listItems = new List<SelectListItem>();
+                                            listItems.Add(new SelectListItem
+                                            {
+                                                Text = "-- " + Resources.Documental_form.opcion + " --",
+                                                Value = "0",
+                                                Selected = true
+                                            });
 
-                        <div class="form-group mt-3">
-                            @Html.EditorFor(model => model.Email_form, new { htmlAttributes = new { @class = "form-control", placeholder = Resources.Contacto.Email_form } })
-                            @Html.ValidationMessageFor(model => model.Email_form, "", new { @class = "text-danger" })
-                        </div>
-                        <div class="form-group mt-3">
-                            @{
-                                List<SelectListItem> listItems = new List<SelectListItem>();
-                                listItems.Add(new SelectListItem
-                                {
-                                    Text = "-- Seleccione documento --",
-                                    Value = "0",
-                                    Selected = true
-                                });
-                                listItems.Add(new SelectListItem
-                                {
-                                    Text = "Currícula",
-                                    Value = "1"
-                                });
+                                            listItems.Add(new SelectListItem
+                                            {
+                                                Text = Resources.Documental_form.documetal_forms_1,
+                                                Value = "1"
+                                            });
 
-                                listItems.Add(new SelectListItem
-                                {
-                                    Text = "Nuevos proyectos",
-                                    Value = "2"
-                                });
+                                            listItems.Add(new SelectListItem
+                                            {
+                                                Text = Resources.Documental_form.documetal_forms_2,
+                                                Value = "2"
+                                            });
+                                        }
+
+                                        @Html.DropDownListFor(model => model.Tipo_form, listItems, new { @class = "form-control", id = "Tipo" })
+                                        @Html.ValidationMessageFor(model => model.Tipo_form, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        @Html.DropDownListFor(model => model.Tipo_form2, new SelectList(""), new { @class = "form-control", id = "Tipo2" })
+                                        @Html.ValidationMessageFor(model => model.Tipo_form2, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group mt-3">
+                                        @Html.TextAreaFor(model => model.Mensaje_form, new { @class = "form-control", placeholder = Resources.Contacto.Mensaje_form })
+                                        @Html.ValidationMessageFor(model => model.Mensaje_form, "", new { @class = "text-danger" })
+                                    </div>
+                                    <br />
+                                    <div class="text-center"><button type="submit">@Resources.Contacto.Boton_form</button></div>
+                                </center>
+
+
                             }
-
-                            @Html.DropDownListFor(model => model.Tipo_form, listItems, new { @class = "form-control" })
                         </div>
-                        <div class="form-group mt-3">
-                            @{
-                                List<SelectListItem> listItemsSpecf = new List<SelectListItem>();
-                                listItemsSpecf.Add(new SelectListItem
-                                {
-                                    Text = "-- Seleccione documento --",
-                                    Value = "0",
-                                    Selected = true
-                                });
-
-                                listItemsSpecf.Add(new SelectListItem
-                                {
-                                    Text = "GENERA D, S.A. DE C.V.",
-                                    Value = "1"
-                                });
-
-                                listItemsSpecf.Add(new SelectListItem
-                                {
-                                    Text = "SATAREM",
-                                    Value = "2"
-                                });
-                                listItemsSpecf.Add(new SelectListItem
-                                {
-                                    Text = "Ciudad médica sustentable",
-                                    Value = "1"
-                                });
-
-                                listItemsSpecf.Add(new SelectListItem
-                                {
-                                    Text = "Planta WTE sustentable",
-                                    Value = "2"
-                                });
-                                listItemsSpecf.Add(new SelectListItem
-                                {
-                                    Text = "Hospitales alta especialidad sustentable",
-                                    Value = "2"
-                                });
-                            }
-
-
-
-                            @Html.DropDownListFor(model => model.Tipo_form, listItemsSpecf, new { @class = "form-control" })
-                        </div>
-                        <br />
-                        <div class="text-center"><button type="submit">@Resources.Contacto.Boton_form</button></div>
-                    }
+                        <div class="col-2"></div>
+                    </div>
                 </div>
-
             </div>
-
         </div>
     </section><!-- End Contact Section -->
     <!-- ======= Portfolio Section ======= -->
     <section class="portfolio">
         <div class="container">
             <div class="section-title">
-                <h2>Galeria</h2>
+                <h2>@Resources.Documental.documental_2</h2>
             </div>
-            @*<div class="row">
-                    <div class="col-lg-12">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">Card</li>
-                            <li data-filter=".filter-web">Web</li>
-                        </ul>
-                    </div>
-                </div>*@
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">@Resources.Documental.documental_3</li>
+                        <li data-filter=".filter-holding">@Resources.Menu.Holding</li>
+                        <li data-filter=".filter-integracion">@Resources.Menu.Integracionpersonal</li>
+                        <li data-filter=".filter-comercializacion">@Resources.Menu.Comercializacion</li>
+                        <li data-filter=".filter-clientes">@Resources.Documental.Clientes</li>
+                    </ul>
+                </div>
+            </div>
 
             <div class="row portfolio-container" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-holding">
                     <div class="portfolio-item">
-                        <img src="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA.jpg" class="img-fluid" />
+                        <img src="~/Content/img/generad/Galeria/GALERIA HOLDING(1).jpg" class="img-fluid" />
                         <div class="portfolio-info">
-
                             <div>
-                                <a href="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                                <a href="~/Content/img/generad/Galeria/GALERIA HOLDING(1).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-comercializacion">
                     <div class="portfolio-item">
-                        <img src="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(1).jpg" class="img-fluid" />
+                        <img src="~/Content/img/generad/Galeria/GALERIA COMMODITIES(1).jpg" class="img-fluid" />
                         <div class="portfolio-info">
-
                             <div>
-                                <a href="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(1).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                                <a href="~/Content/img/generad/Galeria/GALERIA COMMODITIES(1).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-integracion">
                     <div class="portfolio-item">
-                        <img src="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(2).jpg" class="img-fluid" />
+                        <img src="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL(4).jpg" class="img-fluid" />
                         <div class="portfolio-info">
-
                             <div>
-                                <a href="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(2).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                                <a href="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL(4).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-clientes">
                     <div class="portfolio-item">
-                        <img src="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(3).jpg" class="img-fluid" />
+                        <img src="~/Content/img/generad/Galeria/GALERIA CLIENTES(1).jpg" class="img-fluid" />
                         <div class="portfolio-info">
-
                             <div>
-                                <a href="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(3).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                                <a href="~/Content/img/generad/Galeria/GALERIA CLIENTES(1).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-holding">
                     <div class="portfolio-item">
-                        <img src="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(4).jpg" class="img-fluid" />
+                        <img src="~/Content/img/generad/Galeria/GALERIA HOLDING AICM,MÉXICO .jpg" class="img-fluid" />
                         <div class="portfolio-info">
-
                             <div>
-                                <a href="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(4).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                                <a href="~/Content/img/generad/Galeria/GALERIA HOLDING AICM,MÉXICO .jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-app">
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-comercializacion">
                     <div class="portfolio-item">
-                        <img src="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(5).jpg" class="img-fluid" />
+                        <img src="~/Content/img/generad/Galeria/GALERIA COMMODITIES ALUMINIO.jpeg" class="img-fluid" />
                         <div class="portfolio-info">
-
                             <div>
-                                <a href="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(5).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                                <a href="~/Content/img/generad/Galeria/GALERIA COMMODITIES ALUMINIO.jpeg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-integracion">
                     <div class="portfolio-item">
-                        <img src="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(6).jpg" class="img-fluid" />
+                        <img src="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA.jpg" class="img-fluid" />
                         <div class="portfolio-info">
 
                             <div>
-                                <a href="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(6).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                                <a href="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-card">
-                    <div class="portfolio-item">
-                        <img src="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(7).jpg" class="img-fluid" />
-                        <div class="portfolio-info">
 
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-clientes">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA CLIENTES(3).jpg" class="img-fluid" />
+                        <div class="portfolio-info">
                             <div>
-                                <a href="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(7).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                                <a href="~/Content/img/generad/Galeria/GALERIA CLIENTES(3).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-wrap filter-web">
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-holding">
                     <div class="portfolio-item">
-                        <img src="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(8).jpg" class="img-fluid" />
+                        <img src="~/Content/img/generad/Galeria/GALERIA HOLDING(5).jpg" class="img-fluid" />
                         <div class="portfolio-info">
-
                             <div>
-                                <a href="~/Content/img/generad/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(8).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                                <a href="~/Content/img/generad/Galeria/GALERIA HOLDING(5).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-comercializacion">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA COMMODITIES GRANOS.jpeg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA COMMODITIES GRANOS.jpeg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-integracion">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(1).jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA(1).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-clientes">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA CLIENTES(6).jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA CLIENTES(6).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-holding">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA HOLDING CIUDADES SUSTENTABLES.jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA HOLDING CIUDADES SUSTENTABLES.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-comercializacion">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA COMMODITIES.jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA COMMODITIES.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-integracion">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL(2).jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL(2).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-clientes">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/logos_1.jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/logos_1.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-holding">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/HOLDING 18,REESTRUCTURA ECONÓMICA,MÉXICO.jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/HOLDING 18,REESTRUCTURA ECONÓMICA,MÉXICO.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-comercializacion">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA COMMODITIES cátodos de cobre.jpeg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA COMMODITIES cátodos de cobre.jpeg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-integracion">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL(3).jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL(3).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-clientes">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA CLIENTES(5).jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA CLIENTES(5).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-holding">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA HOLDING DRENAJE PROFUNDO CDMX.jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA HOLDING DRENAJE PROFUNDO CDMX.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-comercializacion">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA COMMODITIES(5).jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA COMMODITIES(5).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-integracion">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL.jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA INTEGRACIÓN PROFESIONAL.jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-wrap filter-clientes">
+                    <div class="portfolio-item">
+                        <img src="~/Content/img/generad/Galeria/GALERIA CLIENTES(2).jpg" class="img-fluid" />
+                        <div class="portfolio-info">
+                            <div>
+                                <a href="~/Content/img/generad/Galeria/GALERIA CLIENTES(2).jpg" data-galleryery="portfolioGallery" class="portfolio-lightbox" title="Evidencia"><i class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section><!-- End Portfolio Section -->
 
 </main><!-- End #main -->
+
+<script>
+    $(function () {
+        $("#Tipo").on("change", function () {
+            var categorys = $('#Tipo2');
+            //$("#Tipo2").empty();
+            var categoryId = $(this).val();
+            $.getJSON("/GeneraD/SetDocument", { id: categoryId }, function (response) {
+                categorys.empty(); // remove any existing options
+                $.each(response, function (index, item) {
+                    categorys.append(`<option value="${item.Value}">${item.Text}</option>`);
+                });
+            });
+            //$.get("/GeneraD/SetDocument", { id: categoryId }, function (data) {
+            //    $("#Tipo2").append(`<option value="${data.Value}">${data.Text}</option>`);
+            //});
+        });
+    });
+</script>

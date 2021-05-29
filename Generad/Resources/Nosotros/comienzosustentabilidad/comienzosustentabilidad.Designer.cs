@@ -70,11 +70,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a A comienzos de los años 90&apos;s del siglo pasado, el Ing. Jorge Suárez aumenta un objetivo a la idea de crear un holding: LA SUSTENTABILIDAD como elemento base de criterio para la toma de decisiones en todos las actividades a realizar.
+        ///   Busca una cadena traducida similar a Comienzo en sustentabilidad.
         /// </summary>
         public static string sustentabilidad_1 {
             get {
                 return ResourceManager.GetString("sustentabilidad_1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a A comienzos de los años 90&apos;s del siglo pasado, el Ing. Jorge Suárez aumenta un objetivo a la idea de crear un holding: LA SUSTENTABILIDAD como elemento base de criterio para la toma de decisiones en todos las actividades a realizar.
+        /// </summary>
+        public static string sustentabilidad_2 {
+            get {
+                return ResourceManager.GetString("sustentabilidad_2", resourceCulture);
             }
         }
     }

@@ -124,7 +124,7 @@
     <value>Federal, estatal o municipal</value>
   </data>
   <data name="clientes_de_gobiernos_2" xml:space="preserve">
-    <value>Ofrecemos desarrollo de proyectos de infraestructura partiendo de las necesidades que requiera la población en las áreas de: 
+    <value>ofrecemos desarrollo de proyectos de infraestructura partiendo de las necesidades que requiera la población en las áreas de: 
 
 SALUD (hospitales generales y de alta especialidad; de plantas de tratamiento, reciclamiento e incineración de Residuos Sólidos con generación de energía WTE y plantas de tratamiento de agua residual y plantas potabilizadoras), 
 
@@ -133,9 +133,12 @@ VIALIDADES TERRESTRES Y ACUÁTICAS (públicas o concesionadas), y
 CIUDADES SUSTENTABLES, SIN INVERSIÓN GUBERNAMENTAL</value>
   </data>
   <data name="clientes_de_gobiernos_3" xml:space="preserve">
-    <value>Ofrecemos contactar a los gobiernos con las mejores y mas honestas empresas de diseño, dieseño arquitectónico, construcción, equipamiento de infraestrucura, operación y manteniminto de inmuebles</value>
+    <value>Ofrecemos contactar a los gobiernos con las mejores y mas honestas empresas de diseño, diseño arquitectónico, construcción, equipamiento de infraestrucura, operación y manteniminto de inmuebles</value>
   </data>
   <data name="clientes_de_gobiernos_4" xml:space="preserve">
+    <value>Ofrecemos financiamiento de infraestructura pública para ASOCIACIONES PÚBLICO-PRIVADAS</value>
+  </data>
+  <data name="clientes_de_gobiernos_5" xml:space="preserve">
     <value>Ofrecemos transversalmente mediación de conflictos técnicos, legales y/o económicos con empresas contratadas como contratistas o proveedores, profesionistas u otros gobiernos federales o gobiernos de estados o departamentos y/o gobiernos municipales</value>
   </data>
   <data name="clientes_privados" xml:space="preserve">

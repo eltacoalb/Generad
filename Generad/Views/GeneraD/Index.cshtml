@@ -18,12 +18,12 @@
                 <h2 class="animate__animated animate__fadeInDown">@Resources.Inicio.Presentacion_eslogan</h2>
                 <div class="row justify-content-center">
                     <div class="col-md-4">
-                        <a href="" class="btn-get-started animate__animated animate__fadeInUp">@Resources.Inicio.Presentacion_conector</a>
+                        <a href="@Url.Action("Contacto", "GeneraD", new { lang = Resources.Menu.lang })" class="btn-get-started animate__animated animate__fadeInUp" >@Resources.Inicio.Presentacion_conector</a>
                     </div>
                     <div class="col-md-2">
                     </div>
                     <div class="col-md-6">
-                        <a href="" class="btn-get-started animate__animated animate__fadeInUp">@Resources.Inicio.Presentacion_llave</a>
+                        <a href="@Url.Action("Nosotros", "GeneraD", new { lang = Resources.Menu.lang })" class="btn-get-started animate__animated animate__fadeInUp">@Resources.Inicio.Presentacion_llave</a>
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@
                     <img src="~/Content/img/proceso-creativo.svg" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-7 pt-5">
-                    <h3>@Resources.Inicio.Integracion_personal_1</h3>
+                    <h3>@Resources.Inicio.Integracion_personal</h3>
                     <p class="fst-italic">
                         @Resources.Inicio.Integracion_personal_1
                     </p>

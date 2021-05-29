@@ -121,6 +121,9 @@
     <value>Sustentabilidad</value>
   </data>
   <data name="sustentabilidad_1" xml:space="preserve">
+    <value>Comienzo en sustentabilidad</value>
+  </data>
+  <data name="sustentabilidad_2" xml:space="preserve">
     <value>A comienzos de los años 90's del siglo pasado, el Ing. Jorge Suárez aumenta un objetivo a la idea de crear un holding: LA SUSTENTABILIDAD como elemento base de criterio para la toma de decisiones en todos las actividades a realizar</value>
   </data>
 </root>

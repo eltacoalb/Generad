@@ -129,6 +129,27 @@
   <data name="CorreoContacto_2" xml:space="preserve">
     <value>Gracias por contactarnos, pronto nos estaremos contactando con usted.</value>
   </data>
+  <data name="CorreoContacto_3" xml:space="preserve">
+    <value>Te han contactado</value>
+  </data>
+  <data name="CorreoContacto_4" xml:space="preserve">
+    <value>La persona</value>
+  </data>
+  <data name="CorreoContacto_5" xml:space="preserve">
+    <value>ha solicitado el documento</value>
+  </data>
+  <data name="CorreoContacto_6" xml:space="preserve">
+    <value>con Email</value>
+  </data>
+  <data name="CorreoContacto_7" xml:space="preserve">
+    <value>agregando el mensaje</value>
+  </data>
+  <data name="CorreoContacto_8" xml:space="preserve">
+    <value>y teléfono</value>
+  </data>
+  <data name="CorreoContacto_9" xml:space="preserve">
+    <value>de la compañia</value>
+  </data>
   <data name="Email_form" xml:space="preserve">
     <value>Correo</value>
   </data>

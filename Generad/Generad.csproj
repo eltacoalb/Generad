@@ -57,6 +57,9 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Log" />
     <Reference Include="System.Runtime, Version=4.1.1.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.4.3.1\lib\net462\System.Runtime.dll</HintPath>
       <Private>True</Private>
@@ -126,55 +129,55 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\style.css" />
-    <Content Include="Content\img\about.jpg" />
     <Content Include="Content\img\adaptation.svg" />
-    <Content Include="Content\img\apple-touch-icon.png" />
     <Content Include="Content\img\arquitectura.svg" />
-    <Content Include="Content\img\blog\blog-1.jpg" />
-    <Content Include="Content\img\blog\blog-2.jpg" />
-    <Content Include="Content\img\blog\blog-3.jpg" />
-    <Content Include="Content\img\blog\blog-4.jpg" />
-    <Content Include="Content\img\blog\blog-author.jpg" />
-    <Content Include="Content\img\blog\blog-inside-post.jpg" />
-    <Content Include="Content\img\blog\blog-recent-1.jpg" />
-    <Content Include="Content\img\blog\blog-recent-2.jpg" />
-    <Content Include="Content\img\blog\blog-recent-3.jpg" />
-    <Content Include="Content\img\blog\blog-recent-4.jpg" />
-    <Content Include="Content\img\blog\blog-recent-5.jpg" />
-    <Content Include="Content\img\blog\comments-1.jpg" />
-    <Content Include="Content\img\blog\comments-2.jpg" />
-    <Content Include="Content\img\blog\comments-3.jpg" />
-    <Content Include="Content\img\blog\comments-4.jpg" />
-    <Content Include="Content\img\blog\comments-5.jpg" />
-    <Content Include="Content\img\blog\comments-6.jpg" />
     <Content Include="Content\img\cerebro.svg" />
     <Content Include="Content\img\cooperacion.svg" />
     <Content Include="Content\img\envio.svg" />
     <Content Include="Content\img\equipo.svg" />
     <Content Include="Content\img\estados-unidos-de-america.png" />
-    <Content Include="Content\img\favicon.png" />
     <Content Include="Content\img\features-1.svg" />
     <Content Include="Content\img\features-2.svg" />
     <Content Include="Content\img\features-3.svg" />
     <Content Include="Content\img\features-4.svg" />
-    <Content Include="Content\img\generad\COMERSIALIZACIÓN 01,EQUIPO MÉDICO,TOMÓGRAFO.jpg" />
-    <Content Include="Content\img\generad\COMERSIALIZACIÓN 02,EQUIPO MÉDICO,RESONANCIA MAGNÉTICA.jpg" />
-    <Content Include="Content\img\generad\COMERSIALIZACIÓN 03,EQUIPO MÉDICO,IMAGENOLOGÍA.jpg" />
-    <Content Include="Content\img\generad\COMERSIALIZACIÓN 04,MAQUINARIA INDUSTRIAL,TROQUELADORAS.jpg" />
-    <Content Include="Content\img\generad\COMERSIALIZACIÓN 05,MAQUINARIA INDUSTRIAL,AUTOMATIZACIÓN.jpg" />
+    <Content Include="Content\img\generad\aguacate.jpg" />
     <Content Include="Content\img\generad\COMERSIALIZACIÓN 06,MIEL,MAPA PRODUCTORES.jpg" />
     <Content Include="Content\img\generad\DOCUMENTAL, PORTADA1.jpg" />
     <Content Include="Content\img\generad\DOCUMENTAL,PORTADA.jpg" />
-    <Content Include="Content\img\generad\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA%281%29.jpg" />
-    <Content Include="Content\img\generad\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA%282%29.jpg" />
-    <Content Include="Content\img\generad\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA%283%29.jpg" />
-    <Content Include="Content\img\generad\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA%284%29.jpg" />
-    <Content Include="Content\img\generad\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA%285%29.jpg" />
-    <Content Include="Content\img\generad\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA%286%29.jpg" />
-    <Content Include="Content\img\generad\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA%287%29.jpg" />
-    <Content Include="Content\img\generad\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA%288%29.jpg" />
-    <Content Include="Content\img\generad\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA.jpg" />
+    <Content Include="Content\img\generad\dzidzilche.jpg" />
+    <Content Include="Content\img\generad\FORMACIÓN DIRECTIVA.jpeg" />
+    <Content Include="Content\img\generad\FUERZA PRODUCTORA apicultores.jpeg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA CLIENTES%281%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA CLIENTES%283%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA CLIENTES%285%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA COMMODITIES ALUMINIO.jpeg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA COMMODITIES cátodos de cobre.jpeg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA COMMODITIES GRANOS.jpeg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA COMMODITIES%281%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA CLIENTES%282%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA CLIENTES%286%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA COMMODITIES%285%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA COMMODITIES.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA HOLDING AICM,MÉXICO .jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA HOLDING CIUDADES SUSTENTABLES.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA HOLDING DRENAJE PROFUNDO CDMX.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA HOLDING%281%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA HOLDING%283%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA HOLDING%284%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA HOLDING%285%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA HOLDING%286%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA%281%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA INTEGRACIÓN PROFESIONAL EVIDENCIA.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA INTEGRACIÓN PROFESIONAL%281%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA INTEGRACIÓN PROFESIONAL%282%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA INTEGRACIÓN PROFESIONAL%283%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA INTEGRACIÓN PROFESIONAL%284%29.jpg" />
+    <Content Include="Content\img\generad\Galeria\GALERIA INTEGRACIÓN PROFESIONAL.jpg" />
     <Content Include="Content\img\generad\GENERA D,HOLDING,GOTA DE AGUA,MEDIA CARTA,130519.png" />
+    <Content Include="Content\img\generad\GENERA D,HOLDING,SÓLIDO,MEDIA CARTA,130519.png" />
+    <Content Include="Content\img\generad\GENERA D,TRADE,GOTA DE AGUA,MEDIA CARTA,130519.png" />
+    <Content Include="Content\img\generad\GENERA D,TRADE,SÓLIDO,MEDIA CARTA,130519.png" />
+    <Content Include="Content\img\generad\GENERA D,TRAINING,SÓLIDO,MEDIA CARTA,130519.png" />
     <Content Include="Content\img\generad\HOLDING 05,MEDIACIÓN DE CONFLICTO PENAL,TERMINAL 2 AICM,MÉXICO.jpg" />
     <Content Include="Content\img\generad\HOLDING 06,SOLUCIÓN ESTRUCTURAL,FACULTAD ARQUITECTURA UNAM,MÉXICO.jpg" />
     <Content Include="Content\img\generad\HOLDING 07,APLICACIÓN DE SISTEMAS DE CALIDAD,DISTRIBUIDOR VIAL ZARAGOZA,MÉXICO.jpg" />
@@ -182,70 +185,39 @@
     <Content Include="Content\img\generad\HOLDING 10,DESARROLLO DE INGENIERÍAS,NUEVO SENADO, MÉXICO.jpg" />
     <Content Include="Content\img\generad\HOLDING 11,ENCONTRAR PROBLEMA ACÚSTICO SOLUCIONARLO,SALA NEZAHUALCOYOTL.jpg" />
     <Content Include="Content\img\generad\HOLDING 12,ONU SOLICITA CIUDADES TEMÁTICAS SUSTENTABLES,CIUDAD MÉDICA,PANAMÁ.jpg" />
-    <Content Include="Content\img\generad\HOLDING 13,ELABORACIÓN DE NORMAS DE CONSTRUCCIÓN XOCHIMILCO,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\HOLDING 14,MANUAL DE CALIDAD EN LA CONSTRUCCIÓN,CDMX,MÉXICO.jpg" />
     <Content Include="Content\img\generad\HOLDING 15,ASOCIACIÓN IMPERMEABILINTES,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\HOLDING 16,RECTIFICACIÓN DE TANQUES DE ALMACENAMIENTO,PEMEX,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\HOLDING 17,DESARROLLO DE LOGÍSTICA DE PUMABUS,UNAM,MÉXICO.jpg" />
     <Content Include="Content\img\generad\HOLDING 18,REESTRUCTURA ECONÓMICA,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INICIO 01,SOLUCIÓN A PROBLEMAS HABITACIONALES, CIUDADES SUSTENTABLES.jpg" />
-    <Content Include="Content\img\generad\INICIO 02,DISEÑO Y SUPERVISIÓN DRENAJE PROFUNDO CDMX.jpg" />
     <Content Include="Content\img\generad\INICIO 03,WASTE TO ENERGY.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 01,ELABORACIÓN DE NORMAS,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 02,CURSOS DE INGENIERÍA DE COSTOS,SECRETARÍA DE OBRAS,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 03,CURSOS DE INGENIERÍA DE COSTOS,SECRETARÍA DE OBRAS,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 04,DESARROLLO HUMANO,1500 HORAS,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 05,DESARROLLO HUMANO,1000 HORAS,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 06,REFORMAS 2013,500 HORAS,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 07,INTERMEDIACIÓN JUDICIAL EN OBRA PÚBLICA,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 08,DESARROLLO HUMANO,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 09,DESARROLLO DE ISO 9001,IMPLANTACIÓN,EMBOTELLADORES,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 10,CURSO DE CALIDAD,MÉXICO.jpg" />
-    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL 11,CURSOS DE SEGURIDAD,PEMEX,MÉXICO.jpg" />
+    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL  conocimientos.jpg" />
+    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL actitudes.jpeg" />
+    <Content Include="Content\img\generad\INTEGRACIÓN PROFESIONAL habilidades.jpg" />
+    <Content Include="Content\img\generad\Jabín.jpg" />
+    <Content Include="Content\img\generad\LogoBejamel.png" />
+    <Content Include="Content\img\generad\logos_1.jpg" />
+    <Content Include="Content\img\generad\Mezquite.jpg" />
+    <Content Include="Content\img\generad\multiflora1.jpg" />
     <Content Include="Content\img\generad\NOSOTROS 01,CONSTRUCCIÓN CICLOPISTA MÉXICO 68.jpg" />
     <Content Include="Content\img\generad\NOSOTROS 02,CONSTRUCCIÓN,ESCUELAS DE BACHILLERATO.jpg" />
     <Content Include="Content\img\generad\NOSOTROS 03,CONSTRUCCIÓN,UNIVERSIDAD PEDAGÓGICA NACIONAL,MÉXICO.jpg" />
     <Content Include="Content\img\generad\NOSOTROS 04,CONSTRUCCIÓN,MEDICINA LA SALLE.jpg" />
+    <Content Include="Content\img\generad\Productos\BEJAMEL_MIEL MULTIFLORA imagenes 1024_1.png" />
+    <Content Include="Content\img\generad\Productos\BEJAMEL_MIEL MULTIFLORA imagenes 1024_2.png" />
+    <Content Include="Content\img\generad\Productos\BEJAMEL_MIEL MULTIFLORA imagenes 1024_3.png" />
+    <Content Include="Content\img\generad\Productos\BEJAMEL_MIEL MULTIFLORA imagenes 1024_4.png" />
+    <Content Include="Content\img\generad\Productos\BEJAMEL_MIEL MULTIFLORA imagenes 1024_5.png" />
+    <Content Include="Content\img\generad\Tojonal.jpg" />
     <Content Include="Content\img\handshake.svg" />
     <Content Include="Content\img\hero-bg.jpg" />
     <Content Include="Content\img\leadership.svg" />
     <Content Include="Content\img\logistica.svg" />
     <Content Include="Content\img\mexico.png" />
     <Content Include="Content\img\objetivo.svg" />
-    <Content Include="Content\img\portfolio\portfolio-1.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-2.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-3.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-4.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-5.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-6.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-7.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-8.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-9.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-details-1.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-details-2.jpg" />
-    <Content Include="Content\img\portfolio\portfolio-details-3.jpg" />
     <Content Include="Content\img\proceso-creativo.svg" />
-    <Content Include="Content\img\service-details-1.jpg" />
-    <Content Include="Content\img\service-details-2.jpg" />
-    <Content Include="Content\img\service-details-3.jpg" />
-    <Content Include="Content\img\service-details-4.jpg" />
     <Content Include="Content\img\strategy.svg" />
     <Content Include="Content\img\team.svg" />
-    <Content Include="Content\img\team\team-1.jpg" />
-    <Content Include="Content\img\team\team-2.jpg" />
-    <Content Include="Content\img\team\team-3.jpg" />
-    <Content Include="Content\img\team\team-4.jpg" />
-    <Content Include="Content\img\team\team-5.jpg" />
-    <Content Include="Content\img\team\team-6.jpg" />
-    <Content Include="Content\img\testimonials\testimonials-1.jpg" />
-    <Content Include="Content\img\testimonials\testimonials-2.jpg" />
-    <Content Include="Content\img\testimonials\testimonials-3.jpg" />
-    <Content Include="Content\img\testimonials\testimonials-4.jpg" />
-    <Content Include="Content\img\testimonials\testimonials-5.jpg" />
     <Content Include="Content\img\top.svg" />
     <Content Include="Content\img\trade.svg" />
     <Content Include="Content\img\vision.svg" />
-    <Content Include="Content\img\why-us.jpg" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\vendor\animate.css\animate.compat.css" />
     <Content Include="Content\vendor\animate.css\animate.css" />
@@ -441,7 +413,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CatalogoModel.cs" />
     <Compile Include="Models\ContactoModel.cs" />
+    <Compile Include="Models\DocumentalModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Comercializacion\Comercializacion.en.Designer.cs">
       <DependentUpon>Comercializacion.en.resx</DependentUpon>
@@ -502,6 +476,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Documental.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Documental_form\Documental_form.en.Designer.cs">
+      <DependentUpon>Documental_form.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Documental_form\Documental_form.es.Designer.cs">
+      <DependentUpon>Documental_form.es.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Resources\Documental_form\Documental_form.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -785,6 +769,16 @@
     <EmbeddedResource Include="Resources\Documental\Documental.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Documental.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Documental_form\Documental_form.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Documental_form.en.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Documental_form\Documental_form.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Documental_form.es.Designer.cs</LastGenOutput>
       <CustomToolNamespace>Resources</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Documental_form\Documental_form.resx">

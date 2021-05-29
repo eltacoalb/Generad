@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="commodities" xml:space="preserve">
+    <value>Commodities</value>
+  </data>
+  <data name="commodities_1" xml:space="preserve">
+    <value>Minerales y alimentos</value>
+  </data>
   <data name="equipo_medico" xml:space="preserve">
     <value>Equipo médico</value>
   </data>
@@ -190,13 +196,13 @@ Su sabor combina perfecto con infusiones y postres con fruta.</value>
     <value>Proceso de venta (paso 1)</value>
   </data>
   <data name="proceso_de_venta_paso1_1" xml:space="preserve">
-    <value>Elegir el producto de nuestro catálogo 2021 y revisar las cantidades de existencia</value>
+    <value>Elegir</value>
   </data>
   <data name="proceso_de_venta_paso2" xml:space="preserve">
     <value>Proceso de venta (paso 2)</value>
   </data>
   <data name="proceso_de_venta_paso2_1" xml:space="preserve">
-    <value>Llamar al nuestra oficna en México al +52 5547392178 de Lunes a Viernes de 10 hrs a 17 hrs para información de envío y tiempo de enrtega y realizar el pedido</value>
+    <value>Llamar al nuestra oficina en México al +52 5547392178 de Lunes a Viernes de 10 hrs a 17 hrs para información de envío y tiempo de enrtega y realizar el pedido</value>
   </data>
   <data name="proceso_de_venta_paso3" xml:space="preserve">
     <value>Proceso de venta (paso 3)</value>
@@ -218,5 +224,8 @@ Su sabor combina perfecto con infusiones y postres con fruta.</value>
   </data>
   <data name="productos_y_servicios" xml:space="preserve">
     <value>Productos y servicios</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Ver catálogo</value>
   </data>
 </root>
