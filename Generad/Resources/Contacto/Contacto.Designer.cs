@@ -88,7 +88,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Gracias por contactarnos, pronto nos estaremos contactando con usted..
+        ///   Busca una cadena traducida similar a Gracias por contactarnos, pronto nos comunicaremos contigo.
         /// </summary>
         public static string CorreoContacto_2 {
             get {
